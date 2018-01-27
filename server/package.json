@@ -1,0 +1,35 @@
+{
+  "name": "webvrwall",
+  "version": "1.0.0",
+  "description": "vr image wall",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.1",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.14.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexEBall/WebVR-Wall.git"
+  },
+  "keywords": [
+    "aframe",
+    "react",
+    "vr",
+    "imagewall"
+  ],
+  "author": "PROJECT3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexEBall/WebVR-Wall/issues"
+  },
+  "homepage": "https://github.com/AlexEBall/WebVR-Wall#readme"
+}

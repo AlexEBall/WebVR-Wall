@@ -1,6 +1,6 @@
 module.exports = function(app){
-	const main = require('./routes/main');
+	const controller = require('./routes/controller');
 
-	app.use('/main', main);
+	app.use('/controller', controller);
 }
 

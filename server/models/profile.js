@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
  
 const Profile = new Schema({
     userID: {
-        type: ObjectId,
+        type: Number
     },
     storyInterview: {
         type: String
@@ -35,9 +35,8 @@ const Profile = new Schema({
 });
 
 console.log('profile schema created!');
-
-var Profile = mongoose.model('Profile', ProfileSchema);
-module.exports = Profile;
+console.log("models created", Profile)
+module.exports  = mongoose.model('Profile', Profile);
 
 /*
 first and last name for server side not client side 
