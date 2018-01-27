@@ -3,3 +3,4 @@ module.exports = function(app){
 
 	app.use('/main', main);
 }
+
