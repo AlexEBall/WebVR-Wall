@@ -6,9 +6,9 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 const mongoose = require("mongoose");
+const routes = require("./routes/controller.js");
 
-// prevent errors from Cross Origin Resource Sharing,
-// set headers allowing CORS with middleware
+// set headers prevent errors from Cross Origin Resource Sharing
 app.use(function(req, res, next) {  
   res.header("Access-Control-Allow-Origin", "*");
   res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
@@ -17,48 +17,46 @@ app.use(function(req, res, next) {
   next();
 });
 
-//app.use(favicon(__dirname + '/public/favicon.ico'));
+// app.set('view engine', '');
+// app.set('views', path.join(__dirname, '../webvr-wall'));
+// app.use(express.static(path.join(__dirname, '../webvr-wall')));
+// app.use(favicon(__dirname + '/public/favicon.ico'));
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
-
-const routes = require("./routes/controller.js");
 app.use("/", routes);
 require("./routes")(app);
 
-// get connection
-var db = mongoose.connection;
-
-const databaseUri = "mongodb://localhost/webvr-wall";
-const collections = ["profile"];
-
 // models required
 const Profile = require('./models/profile');
+const config = require('./config/database');
 
-/// bind connection to error event
+// get connection
+const db = mongoose.connection;
+
+const mongoDB = "mongodb://localhost/webvr-wall";
+const collections = ["profile"];
+
+mongoose.Promise = Promise;
+mongoose.connect(mongoDB);
+// mongoose.connect(config.url);
+
 db.on('error', function (err) { 
 	console.log('MongoDB connection error:', err);
 });
 
-// log success once in mongoose
 db.once("open", function() {
-  console.log("Mongoose connection successful.");
+  console.log("Mongoose connected to version", mongoose.version);
 });
-
-console.log("created new database: ", databaseUri)
-console.log("connected to mongoose version", mongoose.version);
-
-
-app.get('*', (req, res) => {
-  var testHtmlPath = path.resolve(__dirname, '..', 'public', 'index.html');
-  res.sendFile(testHtmlPath);
-})
 
 const port = process.env.PORT || 3000;
 
 app.listen(port, function() {
-  console.log("App running port 3000!");
+ console.log('running at localhost: ' + port);
 });
+
+
 
 module.exports = app;

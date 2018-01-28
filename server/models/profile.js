@@ -1,9 +1,9 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
  
-const Profile = new Schema({
+const ProfileSchema = new Schema({
     userID: {
-        type: Number
+        type: String
     },
     storyInterview: {
         type: String
@@ -20,30 +20,50 @@ const Profile = new Schema({
     socialMedia: {
         type: String
     },
-    image360: {
+    profileImage: {
         type: String
     },
-    backgroundImage360: {
+    VR360Image: {
         type: String
     },
     category: {
-      clicks: String
+      type: String
     },
     date: {
-        type: Date
+      type: Date, default: Date.now 
     }
 });
 
 console.log('profile schema created!');
-console.log("models created", Profile)
-module.exports  = mongoose.model('Profile', Profile);
+
+module.exports = mongoose.model('Profile', ProfileSchema);
+
 
 /*
-first and last name for server side not client side 
-UserName: {
-  first: String,
-  last: String
-}
-Permitted Schema Types:
-String, Number, Date, Buffer, Boolean, Mixed, ObjectId, Array
+Permitted Schema Types: String, Number, Date, Buffer, Boolean, Mixed, ObjectId, Array
+  // Maybe we can add these properties to our profile schema?
+
+  firstName: {
+    type: String,
+    trim: true,
+    required: "First Name is Required"
+  },
+  lastName: {
+    type: String,
+    trim: true,
+    required: "Last Name is Required"
+  },
+  user: {
+    type: String,
+    trim: true,
+    required: "Username is Required"
+  },
+  userCreated: {
+    type: Date,
+    default: Date.now
+  },
+  lastUpdated: Date,
+  fullName: String
+});
+
 */
