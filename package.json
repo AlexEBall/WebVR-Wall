@@ -3,10 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.2",
+    "morgan": "^1.9.0",
+    "node-sass": "^4.7.2",
+    "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.0",
-    "recompose": "^0.26.0"
+    "recompose": "^0.26.0",
+    "webpack": "^3.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -14,4 +22,48 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
+}
+
+{
+  "name": "webvrwall",
+  "version": "1.0.0",
+  "description": "vr image wall",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.2",
+    "morgan": "^1.9.0",
+    "node-sass": "^4.7.2",
+    "path": "^0.12.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0",
+    "recompose": "^0.26.0",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexEBall/WebVR-Wall.git"
+  },
+  "keywords": [
+    "aframe",
+    "react",
+    "vr",
+    "imagewall"
+  ],
+  "author": "PROJECT3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexEBall/WebVR-Wall/issues"
+  },
+  "homepage": "https://github.com/AlexEBall/WebVR-Wall#readme"
 }
