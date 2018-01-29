@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w"
   },
   "repository": {
     "type": "git",
