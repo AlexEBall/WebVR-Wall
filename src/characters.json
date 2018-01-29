@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Link",
+    "image": "./images/link.png",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "name": "Princess Zelda",
+    "image": "./images/zelda.png",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "name": "Ganondorf",
+    "image": "./images/ganondorf.png",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "Epona",
+    "image": "./images/epona.png",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Sheik",
+    "image": "./images/sheik.png",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "Malon",
+    "image": "./images/malon.png",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "name": "Princess Ruto",
+    "image": "./images/ruto.png",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "name": "Nabooru",
+    "image": "./images/nabooru.png",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "name": "Impa",
+    "image": "./images/impa.png",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "name": "Darunia",
+    "image": "./images/Darunia.png",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "name": "Navi",
+    "image": "./images/navi.png",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "name": "Saria",
+    "image": "./images/Saria_real.png",
+    "clicked": false
+  },
+  {
+    "id": 13,
+    "name": "Mariam",
+    "image": "./images/background.png",
+    "clicked": false
+  }
+]
