@@ -3,7 +3,7 @@ import {compose} from 'recompose';
 import DifferentList from "./components/DifferntList";
 import withInfiniteScroll from "./components/InfiniteScroll";
 import Characters from './characters.json';
-import './App.css';
+// import './App.css';
 
 console.log(Characters);
 

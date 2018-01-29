@@ -4,6 +4,10 @@
 @import "base/base";
 @import "base/typography";
 
+@import "components/button";
+@import "components/input";
 @import "components/listRow";
 
 @import "layout/grid";
+
+@import "pages/home";
