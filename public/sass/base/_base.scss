@@ -6,6 +6,10 @@
     box-sizing: inherit;
 }
 
+*:focus {
+    outline: none;
+}
+
 html {
     /*Technique to set everything to rem by changing font size
 	we change to 10 because of easy math. 1 rem = 10px also 
