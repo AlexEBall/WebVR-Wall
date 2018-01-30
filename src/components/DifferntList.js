@@ -1,16 +1,19 @@
 import React from 'react';
 
 
-const DifferentList = ({characters}) => 
+const DifferentList = ({characters, clickHandler}) => 
 <div className="list">
     {characters.map(item => 
     <div 
         className={`list-row list-row-${item.id}`} 
         key={item.id}
         style={{backgroundImage: `url(${item.backgroundImg})`}}>
-        {(item.name).charAt(0)}
+        <h3>{(item.name).charAt(0)}</h3>
         <h2>{item.name}</h2>
-        <img src={item.image} alt="zelda character" />
+        <button 
+            className="button button__VR"
+            onClick={() => clickHandler(`${item.id}`)}>Experience My VR World</button>
+        <img className="profileImg" src={item.image} alt="zelda character" />
     </div>
     )}
 </div>
