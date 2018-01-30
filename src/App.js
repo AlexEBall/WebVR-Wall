@@ -5,8 +5,6 @@ import withInfiniteScroll from "./components/InfiniteScroll";
 import Characters from './characters.json';
 // import './App.css';
 
-console.log(Characters);
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -16,6 +14,10 @@ class App extends Component {
       page: null,
       isLoading: false
     };
+  }
+
+  clickHandler = id => {
+    console.log(id);
   }
 
   render() {
@@ -30,9 +32,8 @@ class App extends Component {
 
         <ListWithLoadingWithInfinite
           characters={this.state.Characters}
-          isLoading={this.state.isLoading}
-          page={this.state.page}
-          onPaginatedSearch={this.onPaginatedSearch}/>
+          clickHandler={this.clickHandler}
+          isLoading={this.state.isLoading} />
       </div>
     );
   }
@@ -47,10 +48,6 @@ const withLoading = (Component) => (props) =>
   </div>
 </div>
 
-// const ListWithLoadingWithPaginated = compose(withPaginated, withLoading)(DifferentList);
-
-const ListWithLoadingWithInfinite = compose(
-// withPaginated,
-withInfiniteScroll, withLoading)(DifferentList);
+const ListWithLoadingWithInfinite = compose(withInfiniteScroll, withLoading)(DifferentList);
 
 export default App;

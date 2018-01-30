@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const DifferentList = ({characters}) => 
+const DifferentList = ({characters, clickHandler}) => 
 <div className="list">
     {characters.map(item => 
     <div 
@@ -10,7 +10,9 @@ const DifferentList = ({characters}) =>
         style={{backgroundImage: `url(${item.backgroundImg})`}}>
         <h3>{(item.name).charAt(0)}</h3>
         <h2>{item.name}</h2>
-        <button className="button button__VR">Experience My VR World</button>
+        <button 
+            className="button button__VR"
+            onClick={() => clickHandler(`${item.id}`)}>Experience My VR World</button>
         <img className="profileImg" src={item.image} alt="zelda character" />
     </div>
     )}
