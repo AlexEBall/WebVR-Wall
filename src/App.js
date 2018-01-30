@@ -33,6 +33,8 @@ class App extends Component {
           isLoading={this.state.isLoading}
           page={this.state.page}
           onPaginatedSearch={this.onPaginatedSearch}/>
+
+        <Button>Experience my VR</Button>
       </div>
     );
   }

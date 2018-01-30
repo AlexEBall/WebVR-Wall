@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const DifferentList = ({characters}) => 
 <div className="list">
     {characters.map(item => 
