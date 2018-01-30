@@ -25,19 +25,31 @@ body {
   font-size: 1.4rem;
   font-family: CoreSans, Arial, sans-serif; }
 
+h2, h3 {
+  color: white;
+  font-size: 5rem;
+  margin: 3rem 0; }
+
 .heading {
   flex-grow: 2; }
 
-button {
+.button {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
   border: 1px solid #dddddd;
-  background: transparent;
   color: #808080;
   cursor: pointer; }
-  button:hover {
+  .button:hover {
     color: #222; }
+  .button__VR {
+    background: red;
+    border: .1rem solid #fff;
+    padding: 1.5rem;
+    width: 24rem;
+    display: inline-block;
+    color: white;
+    font-size: 2rem; }
 
 input {
   padding: 10px;
@@ -96,3 +108,7 @@ input {
 
 .interactions {
   text-align: center; }
+
+.profileImg {
+  height: 24rem;
+  width: 20rem; }

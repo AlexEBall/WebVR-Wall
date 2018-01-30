@@ -1,13 +1,23 @@
-button {
+.button {
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
     border: 1px solid #dddddd;
-    background: transparent;
     color: #808080;
     cursor: pointer;
 
     &:hover {
         color: #222;
+    }
+
+    &__VR {
+        background: red;
+        border: .1rem solid #fff;
+        padding: 1.5rem;
+        // height: 2rem;
+        width: 24rem;
+        display: inline-block;
+        color: white;
+        font-size: 2rem;
     }
 }
