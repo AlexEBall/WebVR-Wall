@@ -1,13 +1,11 @@
 import {Entity} from 'aframe-react';
 import React, {Component} from 'react';
-import {compose} from 'recompose';
+// import {compose} from 'recompose';
 import { connect } from 'react-redux';
 import Member from '../components/CharacterDivs';
-// import withInfiniteScroll from "../components/InfiniteScroll";
 import { circularPositionFromIndex } from '../utils/calculations';
 import { nextMemberType } from '../redux/actions';
 
-// const styles = require('../../scss/Members.scss')
 const boxSize = 0.5
 
 class Members extends Component {
@@ -48,6 +46,10 @@ class Members extends Component {
     console.log(id);
   }
 
+  renderVR (member, index) {
+
+  }
+
   // this is where all the props are being passed to the members in react (before VRmode)
   // this function is going to get its member arg from above
   renderMember (member, index) {
@@ -63,8 +65,8 @@ class Members extends Component {
         position={position}
         background={member.backgroundImg}
         index={index}
-        // clickHandler={this.clickHandler}
-        onClick={this.props.onAvatarClicked}
+        clickHandler={this.clickHandler}
+        // onClick={this.props.onAvatarClicked}
         vrMode={this.props.vrMode} />
     )
   }
