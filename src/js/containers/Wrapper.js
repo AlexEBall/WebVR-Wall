@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 
 import Camera from '../components/Camera'
 import Cursor from '../components/Cursor'
+import VRWorld from '../components/VRWorld'
 import Members from './Members'
 import VRModeSwitcher from './VRModeSwitcher'
 
@@ -25,7 +26,7 @@ class Wrapper extends Component {
         <div>
           <Scene>
             <Camera><Cursor/></Camera>
-            <Members/>
+            <VRWorld />
             <VRModeSwitcher/>
           </Scene>
         </div>

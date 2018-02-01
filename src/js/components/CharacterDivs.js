@@ -39,7 +39,6 @@ export default class Member extends Component {
         <div className="list">
           <div 
               className={`list-row list-row-${id} ${memberClass}`} 
-              // onClick={() => {this.props.onClick(id)}}
               key={id}
               style={{backgroundImage: `url(${background})`}}>
               <h3>{(name).charAt(0)}</h3>
@@ -47,7 +46,7 @@ export default class Member extends Component {
               <img className="profileImg" src={photoUrl} alt="zelda character" />
               <button 
                 className="button button__VR"
-                onClick={() => this.props.onAvatarClicked()}>Experience My VR World</button>
+                onClick={() => this.props.clickHandler(id)}>Experience My VR World</button>
           </div>
         </div>
       )

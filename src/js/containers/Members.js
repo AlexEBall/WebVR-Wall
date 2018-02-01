@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 // import {compose} from 'recompose';
 import { connect } from 'react-redux';
 import Member from '../components/CharacterDivs';
+import VRWorld from '../components/VRWorld';
 import { circularPositionFromIndex } from '../utils/calculations';
 import { nextMemberType } from '../redux/actions';
 
@@ -20,16 +21,7 @@ class Members extends Component {
       // seems like the whole thing is toggling two views the whole time
       // with either or vrMode
       return (
-        <Entity>
-          {members.map(this.renderMember.bind(this))}
-          <a-animation attribute="rotation"
-            dur="360000"
-            fill="forwards"
-            to="0 360 0"
-            repeat="indefinite"
-            easing="linear">
-          </a-animation>
-        </Entity>
+        <VRWorld />
       )
     } else {
       // here we are building the react members-container members, with a helper function and
@@ -47,6 +39,8 @@ class Members extends Component {
   }
 
   renderVR (member, index) {
+    let position = circularPositionFromIndex(index, boxSize)
+
 
   }
 
