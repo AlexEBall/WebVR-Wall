@@ -5,7 +5,7 @@ import VRWorld from './pages/VRWorld';
 
 const App = () => 
   <Router>
-    <div>
+    <div className="topLevel">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/VR-World/:id" component={VRWorld} />
