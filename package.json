@@ -32,7 +32,7 @@
     "ghpages": "npm run preghpages && ghpages -p gh-pages",
     "gh-pages": "npm run ghpages",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "node-sass src/public/sass/main.scss src/public/css/style.css -w",
+    "compile:sass": "node-sass client/public/sass/main.scss client/public/css/style.css -w",
     "serve": "cd src && python -m SimpleHTTPServer 8081",
     "serve-js": "webpack-dev-server --content-base src --progress --watch --history-api-fallback --inline --hot --port 8082"
   },
