@@ -1,4 +1,3 @@
-
 const path = require('path');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
@@ -20,7 +19,6 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(express.static("client/build"));
 
-// add routes for api and views
 app.use("/", routes);
 
 const Profile = require('./models/profile');
