@@ -3,8 +3,9 @@ const router  = express.Router();
 const bodyParser = require('body-parser');
 const mongoose = require("mongoose");
 
-const api = require('../apis/api');
+const api = require('../api/api');
 const Profile = require("../models/profile");
+const seedDB = require("../../database/seedDB.js");
 
 // this is my /api route example from export.index on api.js in /server/api
 router.get('/', function(req, res){
@@ -12,27 +13,15 @@ router.get('/', function(req, res){
   // res.render('index');
 });
 
-
 // test object to send to db 
-var data = {
-  userID: "1",
-  storyInterview: "This is a brief story of my life and how I got here",
-  city: "Los Angeles",
-  state: "CA",
-  country: "USA",
-  socialMedia: "http://instagram/mj",
-  profileImage: "profileimage.jpg",
-  VR3660Image: "VR360image.jpg",
-  category: "scientist"
-};
-
 router.get("/test", function(req, res) {
+const seedDB = require("../../database/seedDB.js");
 // Save a new data using the data object
- Profile.create(data)
-  .then(function(test) {
+ Profile.create(seedDB)
+  .then(function(seedDB) {
     // If saved successfully, print the new test document to the console
-    console.log(test);
-    res.json(test);
+    console.log(seedDB, "seedDB created");
+    res.json(seedDB);
   })
   .catch(function(err) {
     // If an error occurs, log the error message

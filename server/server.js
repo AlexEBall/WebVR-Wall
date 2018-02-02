@@ -23,6 +23,7 @@ require("./routes")(app);
 // models required
 const Profile = require('./models/profile');
 const config = require('./config/database');
+// const seedDB = require("../database/seedDB");
 
 // get connection
 const db = mongoose.connection;
@@ -33,6 +34,8 @@ const collections = ["profile"];
 mongoose.Promise = Promise;
 mongoose.connect(mongoDB);
 // mongoose.connect(config.url);
+
+
 
 db.on('error', function (err) { 
 	console.log('MongoDB connection error:', err);
@@ -45,7 +48,7 @@ db.once("open", function() {
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function() {
- console.log('running at localhost: ' + port);
+ console.log('running at localhost: ' + PORT);
 });
 
 
