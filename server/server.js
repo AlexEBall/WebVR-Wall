@@ -23,6 +23,7 @@ app.use("/", routes);
 
 const Profile = require('./models/profile');
 const config = require('./config/database');
+const seedDB = require('../database/seedDB');
 
 const db = mongoose.connection;
 // const mongoDB = "mongodb://MJOAN:Management1!@ds117758.mlab.com:17758/webvr-wall" || "mongodb://localhost/webvr-wall";

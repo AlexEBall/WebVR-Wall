@@ -11,7 +11,7 @@ const mongoMlab =  "mongodb://MJOAN:Github1!@ds117758.mlab.com:17758/webvr-wall"
 mongoose.connect(mongoMlab);
 
 /*mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/webvr-wall",
+  mongodb://MJOAN:Github1!@ds117758.mlab.com:17758/webvr-wall" || "mongodb://localhost/webvr-wall",
 );*/
 
 console.log("seedDB file running")
