@@ -1,13 +1,18 @@
 const mongoose = require("mongoose");
 const db = require("../server/models");
 const Test = require("../server/models/test");
+
 mongoose.Promise = global.Promise;
 
-// This file empties the Books collection and inserts the books below
+var Promise = require("bluebird");
+mongoose.Promise = Promise;
 
-mongoose.connect(
+const mongoMlab =  "mongodb://MJOAN:Github1!@ds117758.mlab.com:17758/webvr-wall";
+mongoose.connect(mongoMlab);
+
+/*mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/webvr-wall",
-);
+);*/
 
 console.log("seedDB file running")
 
@@ -92,11 +97,6 @@ db.Test
   .then(() => db.Test.collection.insertMany(seedDB))
   .then(data => {
     console.log(data.insertedIds.length + " records inserted!");
-    process.exit(0);
   })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
 
 

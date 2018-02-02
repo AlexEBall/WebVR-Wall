@@ -41,7 +41,8 @@ module.exports = mongoose.model('Profile', ProfileSchema);
 
 /*
 Permitted Schema Types: String, Number, Date, Buffer, Boolean, Mixed, ObjectId, Array
-  // Maybe we can add these properties to our profile schema?
+
+// we can add these properties to our profile schema
 
   firstName: {
     type: String,
