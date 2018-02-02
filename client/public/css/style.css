@@ -59,7 +59,7 @@ input {
   border: 1px solid #dddddd; }
 
 .list {
-  margin: 20px 0;
+  margin: 0;
   height: 100vh;
   position: relative; }
   .list-row {
