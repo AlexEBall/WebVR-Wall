@@ -4,6 +4,7 @@ import { Entity, Scene } from 'aframe-react';
 import { Link } from 'react-router-dom';
 // import API from '../../utils/API';
 import character from './character.json';
+import $ from 'jquery';
 
 
 export default class VRWorld extends Component {
@@ -19,6 +20,13 @@ export default class VRWorld extends Component {
     //         .then(res => this.setState({ character: res.data }))
     //         .catch(err => console.log(err));
     // }
+
+    // Removes aframe classes when leaving this route
+    componentWillUnmount() {
+        $('html').removeClass('a-html');
+        // document.html.classList.remove('a-html');
+        document.body.classList.remove('a-body');
+    }
 
     render() {
         // const { name } = this.props
