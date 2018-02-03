@@ -1,6 +1,4 @@
 module.exports = {
-  Test: require("./test")
-};
-
-
-// Profile: require("./profile");
+    Test: require("./test"),
+    Profile: require("./test")
+}

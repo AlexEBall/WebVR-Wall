@@ -3,11 +3,11 @@ const profileController = require("../../controllers/profileController");
 
 // matches with "/api/profile"
 router.route("/")
-  .get(profileController.findAll)
+    .get(profileController.findAll)
 
 // matches with "/api/profile/:id"
 router
-  .route("/:id")
-  .get(profileController.findById)
+    .route("/:id")
+    .get(profileController.findById)
 
 module.exports = router;
