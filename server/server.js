@@ -14,18 +14,11 @@ app.use(express.static("client/build"));
 
 app.use("/", routes);
 
-const Profile = require('./models/profile');
-const Test = require('./models/test');
-const config = require('./config/database');
-const seedDB = require('./database/seedDB');
+const configDB = require('./config/database');
+mongoose.Promise = global.Promise;
+mongoose.connect(configDB.url);
 
 const db = mongoose.connection;
-const collections = ["profile"];
-
-mongoose.Promise = global.Promise;
-mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/webvr-wall",
-);
 
 db.on('error', function(err) {
     console.log('MongoDB connection error:', err);
