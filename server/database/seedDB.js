@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const db = require("../../server/models");
-const Test = require("../../server/models/test");
+const db = require("../server/models");
+const Test = require("../server/models/test");
 mongoose.Promise = global.Promise;
 
 mongoose.connect(
