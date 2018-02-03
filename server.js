@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 const mongoose = require("mongoose");
-const routes = require("./routes");
+const routes = require("./server/routes");
 
 // app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -14,7 +14,7 @@ app.use(express.static("client/build"));
 
 app.use("/", routes);
 
-const configDB = require('./config/database');
+const configDB = require('./server/config/database');
 mongoose.Promise = global.Promise;
 mongoose.connect(configDB.url);
 
