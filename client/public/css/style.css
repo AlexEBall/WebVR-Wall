@@ -49,7 +49,7 @@ body {
     width: 24rem;
     display: inline-block;
     color: white;
-    font-size: 3rem; }
+    font-size: 2rem; }
 
 input {
   padding: 10px;
@@ -122,6 +122,27 @@ input {
   display: flex;
   flex-direction: column;
   box-shadow: 0 0.15rem 1rem rgba(255, 255, 255, 0.9); }
+
+header {
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  z-index: 999;
+  background: rgba(213, 184, 230, 0.555); }
+
+.nav-wrapper {
+  margin: 0 auto;
+  width: 90%; }
+  .nav-wrapper__nav {
+    display: flex;
+    justify-content: space-around;
+    border-radius: .5rem; }
+  .nav-wrapper__link {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 3rem; }
 
 .row {
   max-width: 114rem;

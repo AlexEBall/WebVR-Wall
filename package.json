@@ -1,7 +1,7 @@
 {
-  "name": "meetup-vr",
+  "name": "WebVR-Wall",
   "version": "1.0.0",
-  "description": "An example of using A-Frame with React and Redux.",
+  "description": "Motivational App built with React and Aframe",
   "dependencies": {
     "aframe": "^0.7.1",
     "aframe-react": "4.3.0",
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rspace/aframe-meetup-example.git"
+    "url": "git+https://github.com/AlexEBall/WebVR-Wall"
   },
   "keywords": [
     "aframe",
@@ -49,12 +49,12 @@
     "mozvr",
     "webvr"
   ],
-  "author": "Casper Fabricius <me@casperfabricius.com>",
-  "license": "MIT",
+  "author": "",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/rspace/aframe-meetup-example/issues"
+    "url": "https://github.com/AlexEBall/WebVR-Wall/issues"
   },
-  "homepage": "https://github.com/rspace/aframe-meetup-example#readme",
+  "homepage": "https://github.com/AlexEBall/WebVR-Wall#readme",
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
