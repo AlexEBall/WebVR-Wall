@@ -20,6 +20,13 @@ export default class VRWorld extends Component {
     //         .catch(err => console.log(err));
     // }
 
+    // Removes aframe classes when leaving this route
+    componentWillUnmount() {
+        $('html').removeClass('a-html');
+        // document.html.classList.remove('a-html');
+        document.body.classList.remove('a-body');
+    }
+
     render() {
         // const { name } = this.props
 
