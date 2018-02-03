@@ -1,18 +1,9 @@
 const mongoose = require("mongoose");
 const db = require("../server/models");
 const Test = require("../server/models/test");
-
 mongoose.Promise = global.Promise;
 
-var Promise = require("bluebird");
-mongoose.Promise = Promise;
-
-const mongoMlab =  "mongodb://MJOAN:Github1!@ds117758.mlab.com:17758/webvr-wall";
-mongoose.connect(mongoMlab);
-
-/*mongoose.connect(
-  mongodb://MJOAN:Github1!@ds117758.mlab.com:17758/webvr-wall" || "mongodb://localhost/webvr-wall",
-);*/
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/webvr-wall");
 
 console.log("seedDB file running")
 

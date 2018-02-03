@@ -1,75 +1,40 @@
 {
-  "name": "WebVR-Wall",
+  "name": "webvrwall",
   "version": "1.0.0",
-  "description": "Motivational App built with React and Aframe",
+  "description": "vr image wall",
+  "main": "server.js",
   "dependencies": {
-    "aframe": "^0.7.1",
-    "aframe-react": "4.3.0",
     "axios": "^0.17.1",
-    "babel-polyfill": "^6.26.0",
     "body-parser": "^1.18.2",
-    "classnames": "2.2.5",
+    "concurrently": "^3.5.1",
     "express": "^4.16.2",
-    "fetch-jsonp": "1.0.6",
-    "immutable": "^3.8.1",
-    "mongoose": "^5.0.2",
+    "mongoose": "^5.0.1",
     "morgan": "^1.9.0",
-    "node-sass": "^4.5.0",
-    "path": "^0.12.7",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-redux": "^5.0.3",
-    "react-scripts": "^1.1.0",
-    "recompose": "^0.26.0",
-    "redux": "^3.6.0",
-    "redux-logger": "^2.8.2",
-    "sass-loader": "^6.0.3"
+    "nodemon": "^1.14.11"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "webpack",
-    "preghpages": "npm run build && rm -rf gh-pages && cp -r src gh-pages && cp index.html build/bundle.js gh-pages",
-    "ghpages": "npm run preghpages && ghpages -p gh-pages",
-    "gh-pages": "npm run ghpages",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "node-sass client/public/sass/main.scss client/public/css/style.css -w",
-    "serve": "cd src && python -m SimpleHTTPServer 8081",
-    "serve-js": "webpack-dev-server --content-base src --progress --watch --history-api-fallback --inline --hot --port 8082"
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexEBall/WebVR-Wall"
+    "url": "git+https://github.com/AlexEBall/WebVR-Wall.git"
   },
   "keywords": [
     "aframe",
     "react",
     "vr",
-    "boilerplate",
-    "a-frame",
-    "mozvr",
-    "webvr"
+    "imagewall"
   ],
-  "author": "",
-  "license": "",
+  "author": "PROJECT3",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlexEBall/WebVR-Wall/issues"
   },
-  "homepage": "https://github.com/AlexEBall/WebVR-Wall#readme",
-  "devDependencies": {
-    "babel-core": "^6.24.0",
-    "babel-loader": "^6.4.1",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-0": "^6.22.0",
-    "babel-runtime": "^6.23.0",
-    "css-loader": "^0.27.3",
-    "ghpages": "0.0.10",
-    "json-loader": "^0.5.4",
-    "redux-devtools": "^3.3.2",
-    "redux-devtools-dock-monitor": "^1.1.1",
-    "redux-devtools-log-monitor": "^1.2.0",
-    "style-loader": "^0.14.1",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.2"
-  }
+  "homepage": "https://github.com/AlexEBall/WebVR-Wall#readme"
 }
