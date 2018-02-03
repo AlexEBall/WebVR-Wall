@@ -15,6 +15,7 @@ app.use(express.static("client/build"));
 app.use("/", routes);
 
 const configDB = require('./server/config/database');
+
 mongoose.Promise = global.Promise;
 mongoose.connect(configDB.url);
 
