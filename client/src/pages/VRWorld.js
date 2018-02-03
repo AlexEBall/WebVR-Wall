@@ -4,6 +4,7 @@ import { Entity, Scene } from 'aframe-react';
 import { Link } from 'react-router-dom';
 // import API from '../../utils/API';
 import character from './character.json';
+import $ from 'jquery';
 
 
 export default class VRWorld extends Component {
