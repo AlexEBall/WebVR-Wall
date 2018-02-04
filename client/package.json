@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "name": "webvrroutes",
     "version": "0.1.0",
     "private": true,
@@ -20,26 +19,3 @@
         "eject": "react-scripts eject"
     }
 }
-=======
-  "name": "WebVR-Wall",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "aframe": "^0.7.1",
-    "aframe-react": "^4.3.0",
-    "jquery": "^3.3.1",
-    "node-sass": "^4.7.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
-}
->>>>>>> 5e264f32603a12e0e631b7666828c9a8e67a9dfd
