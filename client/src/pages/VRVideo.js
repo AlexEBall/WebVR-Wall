@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import AFRAME from 'aframe';
-import {Entity, Scene} from 'aframe-react';
+// import {Entity, Scene} from 'aframe-react';
 import {Link} from 'react-router-dom';
 import API from '../utils/API';
 import character from './character.json';
-import model from './model.obj';
-import material from './materials.mtl';
+// import model from './model.obj';
+// import material from './materials.mtl';
 import {$,jQuery} from 'jquery';
 
 export default class VRVideo extends React.Component {

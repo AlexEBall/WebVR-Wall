@@ -4,8 +4,8 @@ import 'aframe';
 import { Link } from 'react-router-dom';
 import API from '../utils/API';
 import character from './character.json';
-import model from './model.obj';
-import material from './materials.mtl';
+// import model from './model.obj';
+// import material from './materials.mtl';
 import {$,jQuery} from 'jquery';
 
 export default class VRWater extends Component {
