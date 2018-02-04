@@ -4,7 +4,9 @@
     "private": true,
     "dependencies": {
         "aframe": "^0.7.1",
+        "aframe-inspector": "^0.7.7",
         "aframe-react": "^4.3.0",
+        "jquery": "^3.3.1",
         "node-sass": "^4.7.2",
         "react": "^16.2.0",
         "react-dom": "^16.2.0",

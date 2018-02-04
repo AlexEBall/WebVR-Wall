@@ -17,14 +17,13 @@ export default class VRWater extends Component {
     // this.props.match.params.id e.g. localhost:3000/books/599dcb67f0f16317844583fc
     // componentDidMount = () => {     API.getProfile(this.props.match.params.id)
     //   .then(res => this.setState({ character: res.data }))         .catch(err =>
-    // console.log(err)); } Removes aframe classes when leaving this route
+    // console.log(err)); } 
+    
+    // Removes aframe classes when leaving this route
     componentWillUnmount() {
         $('html').removeClass('a-html');
         // document.html.classList.remove('a-html');
-        document
-            .body
-            .classList
-            .remove('a-body');
+        document.body.classList.remove('a-body');
     }
 
     render() {
