@@ -3,13 +3,7 @@ const db = require("../server/models");
 const Test = require("../server/models/test");
 mongoose.Promise = global.Promise;
 
-<<<<<<< HEAD
-mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/webvr-wall"
-);
-=======
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/webvr-wall");
->>>>>>> 5e264f32603a12e0e631b7666828c9a8e67a9dfd
 
 console.log("seedDB file running")
 const seedDB = [{
