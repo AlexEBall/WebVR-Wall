@@ -27,7 +27,7 @@ export default class VRWorld extends Component {
     }
 
     render() {
-        // const { name } = this.props
+        const { name } = this.props
 
         return ( 
         <Scene>

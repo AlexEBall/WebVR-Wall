@@ -29,7 +29,7 @@ export default class VRWater extends Component {
     }
 
     render() {
-        // const { name } = this.props
+        const { name } = this.props
         // define assets in <a-assets> and point to assets from our entities using selectors:
 
         return (
@@ -45,7 +45,7 @@ export default class VRWater extends Component {
           <a-entity light="type: hemisphere; color: #AAA; groundColor: #000000; intensity: 0.9;"></a-entity>
           <a-entity light="type: ambient; color: #DC8874; intensity: 0.5;"></a-entity>
            <a-text
-                value={`${this.state.character.id}'s Gallery`}
+                value={`${this.state.character.name}'s Gallery`}
                 position="0.05 0.80 -2"
                 rotation="0 180 0"
                 font="mozillavr"
