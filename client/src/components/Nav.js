@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 
 export default class Nav extends Component {
 
+// get better bootstrap nav
+
     render() {
         return (
             <header>
