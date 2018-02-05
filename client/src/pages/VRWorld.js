@@ -2,27 +2,25 @@ import React, { Component } from 'react';
 import 'aframe';
 import { Entity, Scene } from 'aframe-react';
 import { Link } from 'react-router-dom';
-// import API from '../../utils/API';
+import API from '../utils/API';
 import character from './character.json';
-import $ from 'jquery';
-
+import {$,jQuery} from 'jquery';
 
 export default class VRWorld extends Component {
     state = {
         character: character
     }
 
-    // When this component mounts, grab the book with the _id of this.props.match.params.id
-    // e.g. localhost:3000/books/599dcb67f0f16317844583fc
+    // When this component mounts, grab the profile with _id or id of this.props.match.params.id or _id
+    // e.g. localhost:3000/api/profile/1
 
-    // componentDidMount = () => {
-    //     API.getProfile(this.props.match.params.id)
-    //         .then(res => this.setState({ character: res.data }))
-    //         .catch(err => console.log(err));
-    // }
-
-    // Removes aframe classes when leaving this route
-    componentWillUnmount() {
+    componentDidMount = () => {
+        API.getProfile(this.props.match.params.id)
+            .then(res => this.setState({ character: res.data }))
+            .catch(err => console.log(err));
+    } 
+    
+    componentWillUnmount() {    // Removes aframe classes when leaving this route
         $('html').removeClass('a-html');
         // document.html.classList.remove('a-html');
         document.body.classList.remove('a-body');
