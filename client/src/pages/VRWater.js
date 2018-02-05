@@ -30,8 +30,7 @@ export default class VRWater extends Component {
 
     render() {
         // const { name } = this.props
-        // define assets in <a-assets> and point to assets from our entities using selectors:
-
+        
         return (
           <div>
           <a-scene fog="type: exponential; color: #FFF; density: 0.06;">
