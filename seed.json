@@ -1,0 +1,5 @@
+{
+	"undefined": "process.env.MONGODB_URI",
+	"dev": "process.env.MONGODB_URI",
+	"prod": "process.env.MONGODB_URI"
+}
