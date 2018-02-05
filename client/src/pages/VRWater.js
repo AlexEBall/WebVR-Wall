@@ -4,8 +4,8 @@ import 'aframe';
 import { Link } from 'react-router-dom';
 import API from '../utils/API';
 import character from './character.json';
-// import model from './model.obj';
-// import material from './materials.mtl';
+import model from './model.obj';
+import material from './materials.mtl';
 import {$,jQuery} from 'jquery';
 
 export default class VRWater extends Component {
@@ -16,11 +16,11 @@ export default class VRWater extends Component {
     // When this component mounts, grab the profile with _id or id of this.props.match.params.id or _id
     // e.g. localhost:3000/api/profile/1
 
-    componentDidMount = () => {
+/*    componentDidMount = () => {
         API.getProfile(this.props.match.params.id)
             .then(res => this.setState({ character: res.data }))
             .catch(err => console.log(err));
-    } 
+    } */
 
     componentWillUnmount() {
         $('html').removeClass('a-html');
@@ -29,10 +29,11 @@ export default class VRWater extends Component {
     }
 
     render() {
-        const { name } = this.props
+        // const { name } = this.props
         // define assets in <a-assets> and point to assets from our entities using selectors:
 
         return (
+          <div>
           <a-scene fog="type: exponential; color: #FFF; density: 0.06;">
           <a-entity camera="userHeight: 1.6"
                     universal-controls="movementEnabled: true"> 
@@ -44,17 +45,8 @@ export default class VRWater extends Component {
           <a-cylinder radius="1" height="50" color="#39BB82" position="-5 -24.5 0"></a-cylinder>
           <a-entity light="type: hemisphere; color: #AAA; groundColor: #000000; intensity: 0.9;"></a-entity>
           <a-entity light="type: ambient; color: #DC8874; intensity: 0.5;"></a-entity>
-           <a-text
-                value={`${this.state.character.name}'s Gallery`}
-                position="0.05 0.80 -2"
-                rotation="0 180 0"
-                font="mozillavr"
-                color="#e43e31"
-                side="double"
-                align="center"
-                width="6">
-            </a-text>
         </a-scene>
+        </div>
         );
 
     }
