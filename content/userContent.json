@@ -8,7 +8,9 @@
     "profileImage": "./images/profileImage0.jpg",
     "backgroundimage": "./images/backgroundimage0.jpg",
     "VR360Image": "./images/VR360Image0.jpg",
-    "category": "adventurer",   
+    "VR360Materials": false,
+    "VR360Obj": false,
+    "category": "adventurer" 
 },
 {
     "userID": 1,
@@ -18,8 +20,10 @@
     "country": "Germany",
     "profileImage": "./images/profileImage1.jpg",
     "backgroundimage": "./images/backgroundimage1.jpg",
-    "VR360Image": "./images/VR360Image1.jpg",
-    "category": "adventurer",   
+    "VR360Image": false,
+    "VR360Materials": "./images/360Worlds/materials1.mtl",
+    "VR360Obj": "./images/360Worlds/model1.obj",
+    "category": "Adventurer"   
 },
 {
     "userID": 2,
@@ -30,7 +34,9 @@
     "profileImage": "./images/profileImage2.jpg",
     "backgroundimage": "./images/backgroundimage2.jpg",
     "VR360Image": "./images/VR360Image2.jpg",
-    "category": "entrepreneur",   
+    "VR360Materials": false,
+    "VR360Obj": false,
+    "category": "Entrepreneur"   
 },
 {
     "userID": 3,
@@ -40,8 +46,10 @@
     "country": "Germany",
     "profileImage": "./images/profileImage3.jpg",
     "backgroundimage": "./images/backgroundimage3.jpg",
-    "VR360Image": "./images/VR360Image3.jpg",
-    "category": "entrepreneur",   
+    "VR360Image": false,
+    "VR360Materials": "./images/360Worlds/materials3.mtl",
+    "VR360Obj": "./images/360Worlds/model3.obj",
+    "category": "World Traveler"  
 }
 ]
 
