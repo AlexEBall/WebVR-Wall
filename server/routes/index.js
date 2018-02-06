@@ -13,7 +13,3 @@ module.exports = router;
 
 
  
-// serve  static assets on heroku
-//if (process.env.NODE_ENV === "production") {
-//  app.use(express.static("client/build"));
-
