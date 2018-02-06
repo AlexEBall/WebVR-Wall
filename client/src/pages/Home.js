@@ -28,7 +28,7 @@ export default class Home extends Component {
 
 	render() {
 		let width = window.innerWidth;
-		if (width < 414) {
+		if (width <= 425) {
 			return (
 			<div>
 				<NavMobile />
@@ -37,15 +37,11 @@ export default class Home extends Component {
 					<div 
 						className={`list-row list-row-${item.id}`} 
 						key={item.id}
-						style={{ backgroundImage: `url(${item.backgroundImg})` }}>
+						style={{ backgroundImage: `url(${item.image})` }}>
 						<div className="list-row list-row__text-wrapper">
-							<div className="list-row__letter" style={{backgroundImage: `url(${item.backgroundImg})`}}>{(item.name).charAt(0)}</div>
-							<div className="list-row__text">{item.name}</div>
+							<div className="list-row__letter" style={{backgroundImage: `url(${item.backgroundImg})`}}>{(item.name)}</div>
 						</div>
-						<div className="profile-wrapper">
-							<img className="profileImg" src={item.image} alt="zelda character" />
-							<Link to={`/VR-World/${item.id}`} className="button button__VR">Experience My VR</Link>
-						</div>
+						<Link to={`/VR-World/${item.id}`} className="button button__VR">VR</Link>
 					</div>
 					)}
 				</div>
@@ -60,15 +56,11 @@ export default class Home extends Component {
 					<div 
 						className={`list-row list-row-${item.id}`} 
 						key={item.id}
-						style={{ backgroundImage: `url(${item.backgroundImg})` }}>
+						style={{ backgroundImage: `url(${item.image})` }}>
 						<div className="list-row list-row__text-wrapper">
-							<div className="list-row__letter" style={{backgroundImage: `url(${item.backgroundImg})`}}>{(item.name).charAt(0)}</div>
-							<div className="list-row__text">{item.name}</div>
+							<div className="list-row__letter" style={{backgroundImage: `url(${item.backgroundImg})`}}>{(item.name)}</div>
 						</div>
-						<div className="profile-wrapper">
-							<img className="profileImg" src={item.image} alt="zelda character" />
-							<Link to={`/VR-World/${item.id}`} className="button button__VR">Experience My VR</Link>
-						</div>
+						<Link to={`/VR-World/${item.id}`} className="button button__VR">VR</Link>
 					</div>
 					)}
 				</div>

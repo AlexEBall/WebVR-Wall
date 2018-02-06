@@ -25,7 +25,20 @@ header {
     }
 }
 
-@media only screen and (max-device-width: 414px) {
-    
+.navMobile-wrapper {
+    margin: 0 auto;
+    // width: 90%;
+    &__nav {
+        display: flex;
+    }
+    &__link {
+        // display: inline-block;
+        padding: 1rem 1.5rem;
+        // text-decoration: none;
+        color: black;
+        font-size: 2rem;
+    }
 }
+
+
 

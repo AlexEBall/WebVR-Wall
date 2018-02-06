@@ -8,9 +8,9 @@ export default class NavMobile extends Component {
     render() {
         return (
             <header>
-                <div className="nav-wrapper">
-                    <div className="nav-wrapper__nav">
-                        <a className="nav-wrapper__link" href="#">Home</a>
+                <div className="navMobile-wrapper">
+                    <div className="navMobile-wrapper__nav">
+                        <a className="navMobile-wrapper__link" href="#">Home</a>
                     </div>
                 </div>
             </header>

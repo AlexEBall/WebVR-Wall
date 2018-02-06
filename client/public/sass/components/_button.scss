@@ -1,7 +1,6 @@
 .button {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 1rem;
     border: 1px solid #dddddd;
     color: #808080;
     cursor: pointer;
@@ -21,9 +20,14 @@
     }
 }
 
-@media only screen and (max-device-width: 414px) {
+@media only screen and (max-device-width: 425px) {
     .button__VR {
-        width: 12rem;
+        width: 4rem;
         padding: 1rem;
+        position: absolute;
+        z-index: 15;
+        right: 1rem;
+        bottom: 4rem;
+        font-size: 1rem;
     }
 }
