@@ -19,10 +19,10 @@ mongoose.Promise = global.Promise;
 mongoose.connect(configDB.url);
 
 
-/*if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === "production") {
 	app.use(express.static("client/build"));
 }
-*/
+
 
 const db = mongoose.connection;
 
