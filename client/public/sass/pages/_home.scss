@@ -8,9 +8,18 @@ a {
 .interactions {
     text-align: center;
 }
+
 .profileImg {
     height: 24rem;
     width: 20rem;
     border: 1px solid black;
     margin: 2rem 0 2rem 3rem;
+}
+
+@media only screen and (max-device-width: 414px) {
+    .profileImg {
+        height: 10rem;
+        width: 12rem;
+        margin: 1rem;
+    }
 }

@@ -12,7 +12,7 @@
         background-size: cover;
         background-position: 0px center;
         background-repeat: no-repeat;
-        background-color: rgba(11, 15, 39, .8);
+        background-color: rgba(11, 15, 39, .5);
         z-index: 10;
         position: relative;
 
@@ -36,22 +36,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            // bottom: -30rem;
             left: 0rem;
-            // width: 100%;
             height: 100vh;
-            // margin-right: 0;
-            // padding-left: 10rem;
             transform: translate3d(0, 0, 0);
             -webkit-text-fill-color: transparent !important;
             -webkit-background-clip: text !important;
             background-clip: text !important;
             background-size: cover;
-            background-position: center;
+            // background-position: center;
             background-repeat: no-repeat;
             font-size: 100vh;
             font-weight: 800;
-            // color: #000;
             z-index: 2;
         }
 
@@ -81,4 +76,29 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 .15rem 1rem rgba(256, 256, 256, .9);
+    border-radius: 1rem;
+}
+
+@media only screen and (max-device-width: 414px) {
+.profile-wrapper {
+    right: 0;
+    top: 7rem;
+    margin: 0;
+    right: 2rem;
+}
+
+.list-row__letter {
+    font-size: 70vh;
+    font-weight: 600;
+    left: 2rem;
+}
+
+.list-row__text {
+    font-weight: 400;
+    bottom: 4rem;
+    left: 5%;
+    letter-spacing: .5rem;
+
+}
+
 }

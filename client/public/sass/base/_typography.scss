@@ -15,3 +15,11 @@
     font-size: 8rem;
 }
 
+@media only screen and (max-device-width: 414px) {
+    .list-row__letter {
+
+    }
+    .list-row__text {
+       font-size: 4rem;
+    }
+}

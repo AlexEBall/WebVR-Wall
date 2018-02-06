@@ -33,6 +33,10 @@ body {
   margin: 0;
   font-size: 8rem; }
 
+@media only screen and (max-device-width: 414px) {
+  .list-row__text {
+    font-size: 4rem; } }
+
 .button {
   padding: 10px;
   margin: 10px;
@@ -50,6 +54,11 @@ body {
     display: inline-block;
     color: white;
     font-size: 2rem; }
+
+@media only screen and (max-device-width: 414px) {
+  .button__VR {
+    width: 12rem;
+    padding: 1rem; } }
 
 input {
   padding: 10px;
@@ -71,7 +80,7 @@ input {
     background-size: cover;
     background-position: 0px center;
     background-repeat: no-repeat;
-    background-color: rgba(11, 15, 39, 0.8);
+    background-color: rgba(11, 15, 39, 0.5);
     z-index: 10;
     position: relative; }
     .list-row:not(:last-child) {
@@ -96,7 +105,6 @@ input {
       -webkit-background-clip: text !important;
       background-clip: text !important;
       background-size: cover;
-      background-position: center;
       background-repeat: no-repeat;
       font-size: 100vh;
       font-weight: 800;
@@ -121,7 +129,24 @@ input {
   margin: 8rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0.15rem 1rem rgba(255, 255, 255, 0.9); }
+  box-shadow: 0 0.15rem 1rem rgba(255, 255, 255, 0.9);
+  border-radius: 1rem; }
+
+@media only screen and (max-device-width: 414px) {
+  .profile-wrapper {
+    right: 0;
+    top: 7rem;
+    margin: 0;
+    right: 2rem; }
+  .list-row__letter {
+    font-size: 70vh;
+    font-weight: 600;
+    left: 2rem; }
+  .list-row__text {
+    font-weight: 400;
+    bottom: 4rem;
+    left: 5%;
+    letter-spacing: .5rem; } }
 
 header {
   width: 100%;
@@ -184,3 +209,9 @@ a {
   width: 20rem;
   border: 1px solid black;
   margin: 2rem 0 2rem 3rem; }
+
+@media only screen and (max-device-width: 414px) {
+  .profileImg {
+    height: 10rem;
+    width: 12rem;
+    margin: 1rem; } }
