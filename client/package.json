@@ -15,7 +15,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "compile:sass": "node-sass src/public/sass/main.scss src/public/css/style.css -w",
+        "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject"
