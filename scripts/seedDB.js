@@ -85,9 +85,9 @@ const seedDB = [{
 
 console.log("seed-db file created!");
 
-db.Test
+db.Profile
     .remove({})
-    .then(() => db.Test.collection.insertMany(seedDB))
+    .then(() => db.Profile.collection.insertMany(seedDB))
     .then(data => {
         console.log(data.insertedIds.length + " records inserted!");
     })

@@ -32,7 +32,6 @@ export default class VRWater extends Component {
         // const { name } = this.props
         
         return (
-          <div>
           <a-scene fog="type: exponential; color: #FFF; density: 0.06;">
           <a-entity camera="userHeight: 1.6"
                     universal-controls="movementEnabled: true"> 
@@ -45,7 +44,6 @@ export default class VRWater extends Component {
           <a-entity light="type: hemisphere; color: #AAA; groundColor: #000000; intensity: 0.9;"></a-entity>
           <a-entity light="type: ambient; color: #DC8874; intensity: 0.5;"></a-entity>
         </a-scene>
-        </div>
         );
 
     }

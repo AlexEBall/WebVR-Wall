@@ -30,47 +30,58 @@ export default class VRScene extends Component {
         // const { name } = this.props
 
         return ( 
-    <a-scene>
-      <a-assets>
-        <img id="city" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
-        <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
-        <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
-        <img id="sechelt-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
-        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-        <img id="cubes" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg">
-        <img id="sechelt" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+      <a-scene>
+        <a-assets>
+          <img id="city" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg" data-position="0 0 0" alt="Table de conférence"></img>
+        </a-assets>
+      
+      <a-sky src="#city" rotation="0 0 0"></a-sky> 
+      <a-circle position="-8 -5 2" 
+                rotation="90 0 0"
+                geometry="radius: 1;"                
+                material="side: double;">
+                </a-circle>
 
-        <script id="link" type="text/html">
-          <a-entity class="link"
-            geometry="primitive: plane; height: 1; width: 1"
-            material="shader: flat; src: ${thumb}"
-            event-set__1="_event: mousedown; scale: 1 1 1"
-            event-set__2="_event: mouseup; scale: 1.2 1.2 1"
-            event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
-            event-set__4="_event: mouseleave; scale: 1 1 1"
-            set-image="on: click; target: #image-360; src: ${src}"
-            sound="on: click; src: #click-sound"></a-entity>
-        </script>
-      </a-assets>
-
-      <a-sky id="image-360" radius="10" src="#city"></a-sky>
-
-      <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-        <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
+      <a-entity id="camera-container" rotation="0 100 0">
+           
+      <a-entity id="camera" look-controls camera="fov: 80; userHeight: 0" wasd-controls="enabled: false;" >
+        <a-animation attribute="rotation"
+                  dur="1000"
+                  begin="animation__fuse-complete"
+                  from="-31.2 4 0"
+                  to="2 5.5 0">
+                  </a-animation>
+        <a-entity id="cursor" cursor="fuse: true; fuseTimeout: 100"
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.013; radiusOuter: 0.02"
+            material="color: #000; shader: flat"
+            
+            animation__fuse="startEvents: fusing;
+                        property: scale;
+                        dur: 1000;
+                        to: 0.4 0.4 0.4"
+            animation__fuseed="startEvents: animation__fuse-complete;
+                        property: scale;
+                        dur: 1;
+                        to: 1 1 1">
+            </a-entity>
+        </a-entity>
+      
       </a-entity>
-
-      <a-entity camera look-controls>
-        <a-cursor id="cursor"
-          animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
-          animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
-          event-set__1="_event: mouseenter; color: springgreen"
-          event-set__2="_event: mouseleave; color: black"
-          fuse="true"
-          raycaster="objects: .link"></a-cursor>
-      </a-entity>
-    </a-scene>
+            <a-text
+                value={`${this.state.character.name}'s Gallery. A brief
+                bio on my life and how I got here! I am really 
+                fascinated by computers and coding! I realized
+                early on in life that working hard works!`}
+                position="0.05 0.80"
+                rotation="0 360 0"
+                font="mozillavr"
+                color="#fff"
+                side="double"
+                align="center"
+                width="6">
+            </a-text>
+      </a-scene>
         )
     }
 }

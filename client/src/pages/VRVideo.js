@@ -31,11 +31,11 @@ export default class VRVideo extends React.Component {
     }
 
     render() {
-        //const { name } = this.props
+        const { name } = this.props
                                             
-    return (       
-       <a-scene>
-        <a-scene id="vr-scene">
+    return (      
+
+        <a-scene id="vr-scene" vr-mode-ui="enabled: true">
           <a-camera 
             id="camera"
             position="0 1.8 4"
@@ -44,12 +44,14 @@ export default class VRVideo extends React.Component {
             cursor-color="#000000" 
             cursor-offset="2" 
             cursor-maxdistance="100"
-            cursor-opacity="0.7"></a-camera>
+            cursor-opacity="0.7">
+          </a-camera>
          
           <a-assets>
             <video id="vid" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/"
             crossOrigin="anonymous"
-            autoplay="false"
+
+            autoPlay="false"
             loop="true"
             styles={{display: 'none'}}></video>
           </a-assets>
@@ -60,42 +62,32 @@ export default class VRVideo extends React.Component {
                               segmentsHeight: 64;"
                     material="shader: flat; src: #vid;"
                     scale="-1 1 1">
+          <a-entity camera look-controls="reverseMouseDrag: true"></a-entity>
           </a-entity>
-          <a-text
-                value={`${this.state.character}'s Gallery`}
-                position="0.05 0.80 -2"
-                rotation="0 180 0"
+              <a-text
+                value={`${this.state.character.name}'s Gallery. Abrief
+                bio on my life and how I got here! I am really 
+                fascinated by computers and coding! I realized
+                early on in life that working hard works!`}
+                position="0.05 0.80"
+                rotation="0 360 0"
                 font="mozillavr"
-                color="#e43e31"
+                color="#fff"
                 side="double"
                 align="center"
                 width="6">
             </a-text>
-        </a-scene>
-        </a-scene>
+        </a-scene> 
+
+
     )
   }
 }
 
 
 
-  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
-  <script src="https://rawgit.com/oscarmarinmiro/aframe-video-controls/master/dist/aframe-video-controls.min.js"></script>
+
   
-    <a-scene>
-      <a-assets>
-        <video id="video_1" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/"></video>
-      </a-assets>
-
-      <a-camera position="0 0 5">
-          <a-cursor id="cursor" color="yellow"></a-cursor>
-      </a-camera>
-
-      <a-videosphere src="#video_1" rotation="0 180 0"></a-videosphere>
-
-      <a-entity video-controls="src:#video_1"></a-entity>
-
-    </a-scene>
 
 
 
