@@ -9,7 +9,7 @@ const routes = require("./server/routes");
 // app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static("client/build"));
+// app.use(express.static("client/build"));
 
 app.use("/", routes);
 
@@ -17,6 +17,13 @@ const configDB = require('./server/config/database');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(configDB.url);
+
+
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static("client/build"));
+}
+
+
 const db = mongoose.connection;
 
 db.on('error', function(err) {
