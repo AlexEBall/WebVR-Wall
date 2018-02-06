@@ -1,41 +1,41 @@
 {
-    "name": "webvrwall",
-    "version": "1.0.0",
-    "description": "vr image wall",
-    "main": "server.js",
-    "dependencies": {
-        "axios": "^0.17.1",
-        "body-parser": "^1.18.2",
-        "concurrently": "^3.5.1",
-        "express": "^4.16.2",
-        "mongoose": "^5.0.3",
-        "morgan": "^1.9.0",
-        "node-mongo-seeds": "^2.3.2",
-        "nodemon": "^1.14.11"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "server": "node server.js",
-        "client": "node scripts/start-client.js",
-        "start": "concurrently \"nodemon server.js\" \"npm run client\"",
-        "build": "node scripts/build.js",
-        "seed": "node scripts/seedDB.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/AlexEBall/WebVR-Wall.git"
-    },
-    "keywords": [
-        "aframe",
-        "react",
-        "vr",
-        "imagewall"
-    ],
-    "author": "PROJECT3",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/AlexEBall/WebVR-Wall/issues"
-    },
-    "homepage": "https://github.com/AlexEBall/WebVR-Wall#readme"
+  "name": "webvrwall",
+  "version": "1.0.0",
+  "description": "vr image wall",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.3",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.14.11",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexEBall/WebVR-Wall.git"
+  },
+  "keywords": [
+    "aframe",
+    "react",
+    "vr",
+    "imagewall"
+  ],
+  "author": "PROJECT3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexEBall/WebVR-Wall/issues"
+  },
+  "homepage": "https://github.com/AlexEBall/WebVR-Wall#readme"
 }

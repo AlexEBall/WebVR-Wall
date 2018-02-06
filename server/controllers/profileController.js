@@ -1,6 +1,5 @@
 const db = require("../models");
 
-// controller database query methods for the profileController
 module.exports = {
 
     findAll: function(req, res) {
@@ -9,6 +8,7 @@ module.exports = {
             .sort({ date: -1 })
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
+
     },
     findById: function(req, res) {
         db.Test
@@ -17,3 +17,6 @@ module.exports = {
             .catch(err => res.status(422).json(err));
     }
 }
+
+
+

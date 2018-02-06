@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const db = require("../server/models");
-const Test = require("../server/models/test");
 
 mongoose.Promise = global.Promise;
 
@@ -92,3 +91,19 @@ db.Test
     .then(data => {
         console.log(data.insertedIds.length + " records inserted!");
     })
+
+/*
+
+
+db.Test
+  .remove({})
+  .then(() => db.Test.collection.insertMany(seedDB))
+  .then(data => {
+    console.log(data.insertedIds.length + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+*/
