@@ -1,8 +1,8 @@
 {
-    "id": 1,
-    "name": "Link",
-    "image": "./images/link.png",
+    "id": 4,
+    "name": "Epona",
+    "image": "./images/epona.png",
     "clicked": false,
-    "backgroundImg": "./images/1200px-Royalfamilytomb.png",
+    "backgroundImg": "./images/Dodongos_Cavern.png",
     "type": ""
 }

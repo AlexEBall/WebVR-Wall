@@ -18,7 +18,10 @@ router.get("/:id", profileController.findById);
 
 router.post("/create", profileController.create);
 
+//mongodb://<dbuser>:<dbpassword>@ds125618.mlab.com:25618/heroku_d7ln6lhh
 
+//heroku_d7ln6lhh
 
+// mongoimport -h ds125618.mlab.com:25618 -d heroku_d7ln6lhh -c Test -u accimeesterlin -p Septembre1 --file characters.json
 
 module.exports = router;

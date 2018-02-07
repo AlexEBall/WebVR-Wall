@@ -5,10 +5,21 @@ import VRWorld from './pages/VRWorld';
 import VRTry from './pages/VRTry';
 import VRWater from './pages/VRWater';
 import VRVideo from './pages/VRVideo';
+import Utils from "./utils/API";
 
 export default class App extends Component { 
-  
+
+  componentDidMount(){
+    Utils.getProfiles()
+    .then((response) => {
+      console.log("Response: ", response.data);
+    })
+    .catch((err) => {
+      console.log("Error");
+    }); 
+  }
   render() {
+
     return (
       <Router>
         <div className="topLevel">
