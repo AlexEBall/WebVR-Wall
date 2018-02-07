@@ -9,7 +9,7 @@ const routes = require("./server/routes");
 // app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-// app.use(express.static("client/build"));
+app.use(express.static("client/build"));
 
 app.use("/", routes);
 
