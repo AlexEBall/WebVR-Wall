@@ -41,7 +41,9 @@ export default class Home extends Component {
 						<div className="list-row list-row__text-wrapper">
 							<div className="list-row__letter" style={{backgroundImage: `url(${item.backgroundImg})`}}>{(item.name)}</div>
 						</div>
-						<Link to={`/VR-World/${item.id}`} className="button button__VR">VR</Link>
+						<Link to={`/VR-World/${item.id}`} className="button button__VR">
+							<img className="link-img" src="../images/VR_5-512.png" alt="VR Headset" />
+						</Link>
 					</div>
 					)}
 				</div>
@@ -50,7 +52,7 @@ export default class Home extends Component {
 		} else {
 			return (
 			<div>
-				<Nav />
+				<NavMobile />
 				<div className="list">
 					{characters.map(item => 
 					<div 
@@ -60,7 +62,9 @@ export default class Home extends Component {
 						<div className="list-row list-row__text-wrapper">
 							<div className="list-row__letter" style={{backgroundImage: `url(${item.backgroundImg})`}}>{(item.name)}</div>
 						</div>
-						<Link to={`/VR-World/${item.id}`} className="button button__VR">VR</Link>
+						<Link to={`/VR-World/${item.id}`} className="button button__VR">
+							<img className="link-img" src="../images/VR_5-512.png" alt="VR Headset" />
+						</Link>
 					</div>
 					)}
 				</div>

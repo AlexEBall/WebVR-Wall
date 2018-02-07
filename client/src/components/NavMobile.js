@@ -10,7 +10,9 @@ export default class NavMobile extends Component {
             <header>
                 <div className="navMobile-wrapper">
                     <div className="navMobile-wrapper__nav">
-                        <a className="navMobile-wrapper__link" href="#">Home</a>
+                        <Link to={`/`} className="navMobile-wrapper__link">
+                            <img className="logo" src="../images/logo.png" alt="logo" />
+                        </Link>
                     </div>
                 </div>
             </header>
