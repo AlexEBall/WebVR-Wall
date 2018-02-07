@@ -7,6 +7,6 @@ export default {
   },
   // gets profile with given id
   getProfile: function(id) {
-    return axios.get("/api/profile/" + id);
+    return axios.get("/api/" + id);
   }
 };

@@ -6,11 +6,11 @@ import VRTry from './pages/VRTry';
 import VRWater from './pages/VRWater';
 import VRVideo from './pages/VRVideo';
 import VRPanoramic from './pages/VRPanoramic';
-import Utils from "./utils/API";
+//import Utils from "./utils/API";
 
 export default class App extends Component { 
 
-  componentDidMount(){
+/*  componentDidMount(){
     Utils.getProfiles()
     .then((response) => {
       console.log("Response: ", response.data);
@@ -19,6 +19,7 @@ export default class App extends Component {
       console.log("Error");
     }); 
   }
+  */
   render() {
 
     return (

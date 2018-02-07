@@ -14,7 +14,11 @@
         "dialect": "mongoDB"
     },
     "production": {
-        "use_env_variable": "MLAB",
+        "use_env_variable": "production",
+        "username": "MJOAN",
+        "password": "Github1!",
+        "database": "mongodb://MJOAN:Github1!@ds123728.mlab.com:23728/heroku_q5pwt2pq",
+        "host": "23728",
         "dialect": "mongoDB"
     }
 }

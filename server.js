@@ -4,30 +4,23 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
 const mongoose = require("mongoose");
-const routes = require("./server/routes/api/profile");
+const routes = require("./server/routes/api/profile");  // added /api/profile might change
 
-require("dotenv").config();
+require("dotenv").config(); // added
 
-// app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-if(process.env.NODE_ENVIROMENT === "PRODUCTION"){
+if(process.env.NODE_ENVIROMENT === "PRODUCTION"){   // added
     app.use(express.static("client/build"));
 }
 
-app.use("/api", routes);
+app.use("/api", routes); // added /api
 
 const configDB = require('./server/config/database');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(configDB.url);
-
-
-if (process.env.NODE_ENV === "production") {
-	app.use(express.static("client/build"));
-}
-
 
 const db = mongoose.connection;
 
@@ -49,6 +42,3 @@ app.listen(PORT, function() {
 
 
 
-// router.get("/", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../client/build/index.html"));
-//   });
