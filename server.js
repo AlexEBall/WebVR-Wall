@@ -6,10 +6,15 @@ const app = express();
 const mongoose = require("mongoose");
 const routes = require("./server/routes");
 
+require("dotenv").config();
+
 // app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static("client/build"));
+
+if(process.env.NODE_ENVIROMENT === "PRODUCTION"){
+    app.use(express.static("client/build"));
+}
 
 app.use("/", routes);
 
