@@ -14,21 +14,21 @@
         top: 0;
         bottom: 0;
         right: 0;
-        border-radius: 3px;
-        border: 3px solid #B15947;
+        border-radius: .3rem;
+        border: .3rem solid $primary-color;
     }
 
     &:before {
         content: '';
         position: absolute;
-        border-radius: 3px;
+        border-radius: .3rem;
         left: 0;
         top: 0;
         bottom: 0;
         right: 0;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
-        background: #fff;
+        background: $off-white-color;
         z-index: -1;
     }
 
@@ -43,28 +43,12 @@
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
         &:before {
-            background-color: #f1481b;
+            background-color: $primary-color;
         }
         &:after {
-            border-color: #f1481b;
+            border-color: $primary-off-color;
         }
     }
-    // &:hover,
-    // &:focus {
-    //     background: {
-    //         image: linear-gradient(to top, #ff6b40, #ff6b40 7%, lighten(#ff6b40, 5%) 7%, lighten(#ff6b40, 5%));
-    //         position: 0 0;
-    //         size: 100% 100%;
-    //     }
-    //     border-radius: 7px;
-    //     margin: .5rem;
-    //     padding: 0.25rem 2rem;
-    // }
-
-    // &:active {
-    //     background-image: linear-gradient(to bottom, darken(#ff6b40, 7%), darken(#ff6b40, 7%) 7%, #ff6b40 7%, #ff6b40);
-    //     border-radius: 7px;
-    // }
 }
 
 
@@ -94,21 +78,21 @@
             top: 0;
             bottom: 0;
             right: 0;
-            border-radius: 3px;
-            border: 3px solid #B15947;
+            border-radius: .3rem;
+            border: .3rem solid $primary-color;
         }
 
         &:before {
             content: '';
             position: absolute;
-            border-radius: 3px;
+            border-radius: .3rem;
             left: 0;
             top: 0;
             bottom: 0;
             right: 0;
             -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-            background: #fff;
+            background: $off-white-color;
             z-index: -1;
         }
 
@@ -123,29 +107,12 @@
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
             &:before {
-                background-color: #f1481b;
+                background-color: $primary-color;
             }
             &:after {
-                border-color: #f1481b;
+                border-color: $primary-off-color;
             }
         }
-
-        // &:hover,
-        // &:focus {
-        //     background: {
-        //         image: linear-gradient(to top, #ff6b40, #ff6b40 7%, lighten(#ff6b40, 5%) 7%, lighten(#ff6b40, 5%));
-        //         position: 0 0;
-        //         size: 100% 100%;
-        //     }
-        //     border-radius: 7px; 
-        //     margin: .5rem;
-        //     padding: 0.25rem 2rem;
-        // }
-
-        // &:active {
-        //     background-image: linear-gradient(to bottom, darken(#ff6b40, 7%), darken(#ff6b40, 7%) 7%, #ff6b40 7%, #ff6b40);
-        //     border-radius: 7px;
-        // }
     }
 
     .link-img {

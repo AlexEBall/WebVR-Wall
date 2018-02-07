@@ -6,13 +6,12 @@
     &-row {
         display: flex;
         flex-direction: column;
-        background: #ffffff;
         height: 50vh;
         overflow: hidden;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        background-color: rgba(11, 15, 39, .4);
+        background-color: rgba($secondary-color, .25);
         z-index: 10;
         position: relative;
 

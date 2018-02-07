@@ -8,33 +8,35 @@ header {
 .logo {
     height: 8rem;
     width: 11rem; 
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .navMobile-wrapper {
     margin: 0 auto;
+
     &__nav {
         display: flex;
     }
+
     &__link {
         padding: .5rem;
-        color: black;
         font-size: 2rem;
         transition: all 350ms ease-out;
+
         &:hover,
         &:focus {
             background: {
-                image: linear-gradient(to top, #ff6b40, #ff6b40 7%, lighten(#ff6b40, 5%) 7%, lighten(#ff6b40, 5%));
+                image: linear-gradient(to top, $secondary-color, $secondary-color 7%, lighten($secondary-color, 5%) 7%, lighten($secondary-color, 5%));
                 position: 0 0;
                 size: 100% 100%;
             }
-            border-radius: 7px;
-            margin: .5rem;
+            border-radius: .7rem;
+            margin: 1.5rem;
             padding: 0.25rem 2rem;
         }
         &:active {
-            background-image: linear-gradient(to bottom, darken(#ff6b40, 7%), darken(#ff6b40, 7%) 7%, #ff6b40 7%, #ff6b40);
-            border-radius: 7px;
+            background-image: linear-gradient(to bottom, darken($secondary-color, 7%), darken($secondary-color, 7%) 7%, $secondary-color 7%, $secondary-color);
+            border-radius: .7rem;
         }
     }
 }
@@ -43,6 +45,7 @@ header {
     .logo {
         height: 4rem;
         width: 5rem;
+        margin-left: 1rem;
     }
 
     .navMobile-wrapper {
@@ -53,24 +56,23 @@ header {
         }
         &__link {
             padding: .5rem;
-            color: black;
             font-size: 2rem;
             transition: all 350ms ease-out;
 
             &:hover, &:focus {
                 background: {
-                    image: linear-gradient(to top, #ff6b40, #ff6b40 7%, lighten(#ff6b40, 5%) 7%, lighten(#ff6b40, 5%));
+                    image: linear-gradient(to top, $secondary-color, $secondary-color 7%, lighten($secondary-color, 5%) 7%, lighten($secondary-color, 5%));
                     position: 0 0;
                     size: 100% 100%;
                 }
-                border-radius: 7px;
-                margin: .5rem;
+                border-radius: .7rem;
+                margin: 1.5rem;
                 padding: 0.25rem 2rem;
             }
 
             &:active {
-                background-image : linear-gradient(to bottom, darken(#ff6b40, 7%), darken(#ff6b40, 7%) 7%, #ff6b40 7%, #ff6b40);
-                border-radius: 7px;
+                background-image : linear-gradient(to bottom, darken($secondary-color, 7%), darken($secondary-color, 7%) 7%, $secondary-color 7%, $secondary-color);
+                border-radius: .7rem;
             }
         }
     }   
