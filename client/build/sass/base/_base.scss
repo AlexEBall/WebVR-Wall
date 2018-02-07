@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    /*Technique to set everything to rem by changing font size
+	we change to 10 because of easy math. 1 rem = 10px also 
+	comment out the body's 16px font size, setting to 100% makes
+	it = to root 16px, but then / 10 for our 10px*/
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    color: #222;
+    background: #f4f4f4;
+}
+
+// .topLevel {
+//     position: relative;
+//     height: 100vh;
+//     overflow: hidden;
+// }

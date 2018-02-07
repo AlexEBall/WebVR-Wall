@@ -1,0 +1,15 @@
+@mixin clearfix {
+    // append a psuedo element after the element which will
+    // then clear these floats
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin mediaMaxW($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}

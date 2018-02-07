@@ -86,9 +86,12 @@ export default class VRVideo extends React.Component {
 
 
 
+<<<<<<< HEAD
 
   
 
+=======
+>>>>>>> 76b4c3f741821670434810e5b16dc278ed5a7c3c
 
 
 

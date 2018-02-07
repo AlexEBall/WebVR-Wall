@@ -3,8 +3,9 @@ const db = require("../models");
 module.exports = {
 
     findAll: function(req, res) {
+        console.log("Req: ", req.query);
         db.Test
-            .find(req.query)
+            .find({})
             .sort({ date: -1 })
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
@@ -13,6 +14,13 @@ module.exports = {
     findById: function(req, res) {
         db.Test
             .findById(req.params.id)
+            .then(dbModel => res.json(dbModel))
+            .catch(err => res.status(422).json(err));
+    },
+
+    create: function (req, res) {
+        db.Test
+            .create(req.body)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     }
