@@ -4,7 +4,7 @@ import 'aframe';
 import { Link } from 'react-router-dom';
 import API from '../utils/API';
 import character from './character.json';
-import {$,jQuery} from 'jquery';
+import $ from 'jquery';
 
 export default class VRPanoramic extends Component {
     state = {
@@ -22,7 +22,6 @@ export default class VRPanoramic extends Component {
     
     componentWillUnmount() {    // Removes aframe classes when leaving this route
         $('html').removeClass('a-html');
-        // document.html.classList.remove('a-html');
         document.body.classList.remove('a-body');
     }
 

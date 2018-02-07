@@ -24,7 +24,6 @@ export default class VRTry extends Component {
 
     componentWillUnmount() {
         $('html').removeClass('a-html');
-        // document.html.classList.remove('a-html');
         document.body.classList.remove('a-body');
     }
 
