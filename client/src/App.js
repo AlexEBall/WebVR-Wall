@@ -14,7 +14,7 @@ export default class App extends Component {
         <div className="topLevel">
           <Switch>
             <Route onUpdate={() => window.scrollTo(0, 0)} exact path="/" component={Home} />
-            <Route exact path="/VR-World/:id" component={VRVideo} />
+            <Route exact path="/VR-World/:id" component={VRTry} />
           </Switch>
         </div>
       </Router>

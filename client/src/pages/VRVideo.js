@@ -6,7 +6,8 @@ import API from '../utils/API';
 import character from './character.json';
 import model from './model.obj';
 import material from './materials.mtl';
-import { $ } from 'jquery';
+import $ from 'jquery';
+
 /*import arrow_key_rotation from './vrvideo-helper';
 import play_on_window_click from './vrvideo-helper';*/
 
@@ -49,7 +50,7 @@ export default class VRVideo extends React.Component {
           <a-assets>
             <video id="vid" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/"
             crossOrigin="anonymous"
-            autoplay="false"
+            autoPlay="false"
             loop="true"
             styles={{display: 'none'}}></video>
           </a-assets>

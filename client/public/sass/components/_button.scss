@@ -1,22 +1,127 @@
-.button {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 1px solid #dddddd;
-    color: #808080;
-    cursor: pointer;
+.button__VR {
+    padding: 2rem;
+    width: 14rem;
+    position: absolute;
+    bottom: 3rem;
+    right: 4rem;
+    z-index: 15;
+   
+    &:after {
+        transition: all 350ms ease;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: .3rem;
+        border: .3rem solid $primary-color;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        border-radius: .3rem;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background: $off-white-color;
+        z-index: -1;
+    }
 
     &:hover {
-        color: #222;
+        &:after {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
     }
 
-    &__VR {
-        background: red;
-        border: .1rem solid #fff;
-        padding: 2rem;
-        width: 24rem;
-        display: inline-block;
-        color: white;
-        font-size: 2rem;
+    &:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        &:before {
+            background-color: $primary-color;
+        }
+        &:after {
+            border-color: $primary-off-color;
+        }
     }
 }
+
+
+.link-img {
+    height: 10rem;
+    width: 14rem;
+    padding-right: 4rem;
+}
+
+@media only screen and (max-device-width: 425px) {
+    .button__VR {
+        width: 5rem;
+        padding: .5rem;
+        position: absolute;
+        z-index: 15;
+        right: 1rem;
+        bottom: 2rem;
+        font-size: 1rem;
+        height: 5rem;
+        // transition: all 350ms ease;
+
+        &:after {
+            transition: all 350ms ease;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            border-radius: .3rem;
+            border: .3rem solid $primary-color;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            border-radius: .3rem;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background: $off-white-color;
+            z-index: -1;
+        }
+
+        &:hover {
+            &:after {
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+
+        &:active {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            &:before {
+                background-color: $primary-color;
+            }
+            &:after {
+                border-color: $primary-off-color;
+            }
+        }
+    }
+
+    .link-img {
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        bottom: .5rem;
+        right: .5rem;
+        padding-right: 0;
+    }
+}
+

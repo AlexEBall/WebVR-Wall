@@ -6,7 +6,7 @@ import API from '../utils/API';
 import character from './character.json';
 import model from './model.obj';
 import material from './materials.mtl';
-import {$,jQuery} from 'jquery';
+import $ from 'jquery';
 
 export default class VRTry extends Component {
     state = {
