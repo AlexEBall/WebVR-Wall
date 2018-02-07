@@ -3,7 +3,6 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
-const router = express.Router();
 const mongoose = require("mongoose");
 const routes = require("./server/routes");
 
@@ -18,7 +17,6 @@ const configDB = require('./server/config/database');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(configDB.url);
-
 const db = mongoose.connection;
 
 db.on('error', function(err) {
@@ -29,7 +27,7 @@ db.once("open", function() {
     console.log("Mongoose connected to version", mongoose.version);
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, function() {
     console.log(`🌎  ==> API server listening on PORT ${PORT}!`);

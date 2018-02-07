@@ -5,19 +5,19 @@ const ProfileSchema = new Schema({
     userID: {
         type: String
     },
-    storyInterview: {
+    fullName: {
         type: String
     },
-    city: {
+    briefStory: {
         type: String
     },
-    state: {
+    story: {
         type: String
     },
     country: {
         type: String
     },
-    socialMedia: {
+    backgroundImage: {
         type: String
     },
     profileImage: {
