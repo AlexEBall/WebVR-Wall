@@ -60,8 +60,8 @@ export default class VRVideo extends React.Component {
                               segmentsWidth: 64;
                               segmentsHeight: 64;"
                     material="shader: flat; src: #vid;"
-                    scale="-1 1 1">
-          </a-entity>
+                    scale="-1 1 1" />
+         
           <a-text
                 value={`${this.state.character}'s Gallery`}
                 position="0.05 0.80 -2"
@@ -80,7 +80,7 @@ export default class VRVideo extends React.Component {
 
 
 
-  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+  {/* <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
   <script src="https://rawgit.com/oscarmarinmiro/aframe-video-controls/master/dist/aframe-video-controls.min.js"></script>
   
     <a-scene>
@@ -96,7 +96,7 @@ export default class VRVideo extends React.Component {
 
       <a-entity video-controls="src:#video_1"></a-entity>
 
-    </a-scene>
+    </a-scene> */}
 
 
 
