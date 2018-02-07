@@ -1,0 +1,186 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+*:focus {
+  outline: none; }
+
+html {
+  /*Technique to set everything to rem by changing font size
+	we change to 10 because of easy math. 1 rem = 10px also 
+	comment out the body's 16px font size, setting to 100% makes
+	it = to root 16px, but then / 10 for our 10px*/
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  color: #222;
+  background: #f4f4f4; }
+
+body {
+  font-weight: 400;
+  font-family: Lato, Arial, sans-serif; }
+
+.list-row__letter {
+  font-family: 'Alegreya', serif; }
+
+.list-row__text {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  margin: 0;
+  font-size: 8rem; }
+
+.button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  color: #808080;
+  cursor: pointer; }
+  .button:hover {
+    color: #222; }
+  .button__VR {
+    background: red;
+    border: .1rem solid #fff;
+    padding: 2rem;
+    width: 24rem;
+    display: inline-block;
+    color: white;
+    font-size: 2rem; }
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 10px;
+  border: 1px solid #dddddd; }
+
+.list {
+  margin: 0;
+  height: 100vh;
+  position: relative; }
+  .list-row {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+    background-color: rgba(11, 15, 39, 0.8);
+    z-index: 10;
+    position: relative; }
+    .list-row:not(:last-child) {
+      margin-bottom: 2rem; }
+    .list-row__text-wrapper {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      height: 100vh;
+      z-index: 15; }
+    .list-row__letter {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 0rem;
+      height: 100vh;
+      transform: translate3d(0, 0, 0);
+      -webkit-text-fill-color: transparent !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-size: 100vh;
+      font-weight: 800;
+      z-index: 2; }
+    .list-row__text {
+      font-weight: 800;
+      bottom: 10rem;
+      left: 25%;
+      position: absolute;
+      text-transform: uppercase;
+      transform: translate3d(0, 0, 0);
+      letter-spacing: 1.2rem;
+      z-index: 2;
+      white-space: nowrap; }
+
+.profile-wrapper {
+  position: absolute;
+  border: 1px solid red;
+  z-index: 15;
+  background-color: #fafffb;
+  right: 0;
+  margin: 8rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.15rem 1rem rgba(255, 255, 255, 0.9); }
+
+header {
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  z-index: 999;
+  background: rgba(213, 184, 230, 0.555); }
+
+.nav-wrapper {
+  margin: 0 auto;
+  width: 90%; }
+  .nav-wrapper__nav {
+    display: flex;
+    justify-content: space-around;
+    border-radius: .5rem; }
+  .nav-wrapper__link {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 3rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+a {
+  text-decoration: none; }
+
+.page {
+  margin: 20px; }
+
+.interactions {
+  text-align: center; }
+
+.profileImg {
+  height: 24rem;
+  width: 20rem;
+  border: 1px solid black;
+  margin: 2rem 0 2rem 3rem; }
