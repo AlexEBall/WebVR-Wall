@@ -8,5 +8,7 @@ router.get("/", profileController.findAll);
 router.get("/:id", profileController.findById);
 // matches with "/api/create
 router.post("/create", profileController.create);
+// matches with "/api/remove/:id
+router.put("/remove/:id", profileController.remove);
 
 module.exports = router;

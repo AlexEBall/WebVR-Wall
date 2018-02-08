@@ -3,7 +3,7 @@ const db = require("../models");
 module.exports = {
 
     findAll: function(req, res) {
-        console.log("Req: ", req.query);  // .find(req.query)
+        console.log("req.query ", req.query);  // .find(req.query)
         db.Profile 
             .find({})
             .sort({ date: -1 })
@@ -19,6 +19,7 @@ module.exports = {
     },
 
     create: function (req, res) {
+        console.log("req.body: ", req.body);  
         db.Profile
             .create(req.body)
             .then(dbModel => res.json(dbModel))
