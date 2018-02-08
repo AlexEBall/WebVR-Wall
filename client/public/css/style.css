@@ -269,13 +269,7 @@ a {
 /*-------------
  	General
 -------------*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 html {
-  font: normal 16px sans-serif;
   color: #555; }
 
 ul,
@@ -292,47 +286,48 @@ a:hover {
   opacity: 1; }
 
 a.btn {
-  color: #fff;
-  border-radius: 4px;
+  color: #FEFDFF;
+  border-radius: .4rem;
   text-transform: uppercase;
-  background-color: #2196F3;
+  background-color: #05386B;
   font-weight: 800;
   text-align: center; }
 
 hr {
-  width: 150px;
-  height: 2px;
-  background-color: #2196F3;
+  width: 15rem;
+  height: .2rem;
+  background-color: #05386B;
   border: 0;
-  margin-bottom: 80px; }
+  margin-bottom: 8rem; }
 
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 125px 100px; }
+  padding: 12.5rem 10rem; }
 
 @media (max-width: 1000px) {
   section {
-    padding: 100px 50px; } }
+    padding: 10rem 5rem; } }
 
 @media (max-width: 600px) {
   section {
-    padding: 80px 30px; } }
+    padding: 8rem 3rem; } }
 
 section h3.title {
-  color: #414a4f;
+  color: #5CDB95;
   text-transform: capitalize;
-  font: bold 32px 'Open Sans', sans-serif;
-  margin-bottom: 35px;
+  font: bold 3.2rem 'Lato', sans-serif;
+  margin-bottom: 3.5rem;
   text-align: center; }
 
 section p {
-  max-width: 800px;
+  max-width: 80rem;
   text-align: center;
-  margin-bottom: 35px;
-  padding: 0 20px;
-  line-height: 2; }
+  margin-bottom: 3.5rem;
+  padding: 0 2rem;
+  line-height: 2;
+  font-size: 1.5rem; }
 
 ul.grid {
   width: 100%;
@@ -352,17 +347,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
-  padding: 35px 100px 0; }
+  color: #FEFDFF;
+  padding: 3.5rem 10rem 0;
+  font-size: 2rem; }
 
 header h2 {
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Alegreya', serif; }
 
 header nav {
   display: flex; }
 
 header nav li {
-  margin: 0 15px; }
+  margin: 0 1.5rem; }
 
 header nav li:first-child {
   margin-left: 0; }
@@ -372,13 +368,13 @@ header nav li:last-child {
 
 @media (max-width: 1000px) {
   header {
-    padding: 20px 50px; } }
+    padding: 2rem 5rem; } }
 
 @media (max-width: 700px) {
   header {
     flex-direction: column; }
   header h2 {
-    margin-bottom: 15px; } }
+    margin-bottom: 1.5rem; } }
 
 /*----------------
  	Hero Section
@@ -387,7 +383,7 @@ header nav li:last-child {
   position: relative;
   justify-content: center;
   min-height: 100vh;
-  color: #fff;
+  color: #FEFDFF;
   text-align: center; }
 
 .hero .background-image {
@@ -397,7 +393,7 @@ header nav li:last-child {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-color: #2196F3;
+  background-color: #5CDB95;
   z-index: -1; }
 
 .hero .background-image:after {
@@ -407,47 +403,47 @@ header nav li:last-child {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #414a4f;
+  background-color: #A2C6D8;
   opacity: 0.50; }
 
 .hero h1 {
-  font: bold 60px 'Open Sans', sans-serif;
-  margin-bottom: 15px; }
+  font: bold 8rem 'Alegreya', serif;
+  margin-bottom: 1.5rem; }
 
 .hero h3 {
-  font: normal 28px 'Open Sans', sans-serif;
-  margin-bottom: 40px; }
+  font: normal 2.8rem 'Lato', sans-serif;
+  margin-bottom: 4rem; }
 
 .hero a.btn {
-  padding: 20px 46px; }
+  padding: 2rem 4.6rem; }
 
 @media (max-width: 800px) {
   .hero {
-    min-height: 600px; }
+    min-height: 60rem; }
   .hero h1 {
-    font-size: 48px; }
+    font-size: 4.8rem; }
   .hero h3 {
-    font-size: 24px; }
+    font-size: 2.4rem; }
   .hero a.btn {
-    padding: 15px 40px; } }
+    padding: 1.5rem 4rem; } }
 
 /*--------------------
  	Our Work Section
 ---------------------*/
 .оur-work {
-  background-color: #fff; }
+  background-color: #D0D0D1; }
 
 .our-work p {
   margin-bottom: .5rem; }
 
 .our-work .grid li {
-  padding: 20px;
-  height: 350px;
-  border-radius: 3px;
+  padding: 2rem;
+  height: 35rem;
+  border-radius: .3rem;
   background-clip: content-box;
   background-size: cover;
   background-position: center;
-  background-color: #333; }
+  background-color: #05386B; }
 
 .our-work .grid li.small {
   flex-basis: 40%; }
@@ -464,22 +460,22 @@ header nav li:last-child {
  	Features Section
 ----------------------*/
 .features {
-  background-color: #f7f7f7; }
+  background-color: #FEFDFF; }
 
 .features .grid li {
-  padding: 0 30px;
+  padding: 0 3rem;
   flex-basis: 33%;
   text-align: center; }
 
 .features .grid li i {
-  font-size: 50px;
-  color: #2196F3;
-  margin-bottom: 25px; }
+  font-size: 5rem;
+  color: #05386B;
+  margin-bottom: 2.5rem; }
 
 .features .grid li h4 {
   color: #555;
-  font-size: 20px;
-  margin-bottom: 25px; }
+  font-size: 2rem;
+  margin-bottom: 2.5rem; }
 
 .features .grid li p {
   margin: 0; }
@@ -487,7 +483,7 @@ header nav li:last-child {
 @media (max-width: 1000px) {
   .features .grid li {
     flex-basis: 70%;
-    margin-bottom: 65px; }
+    margin-bottom: 6.5rem; }
   .features .grid li:last-child {
     margin-bottom: 0; } }
 
@@ -499,58 +495,58 @@ header nav li:last-child {
  	Reviews Section
 --------------------*/
 .reviews {
-  background-color: #fff; }
+  background-color: #E7E6E8; }
 
 .reviews .quote {
   text-align: center;
   width: 80%;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 300;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   padding: 0; }
 
 .reviews .author {
-  font-size: 18px;
-  margin-bottom: 50px; }
+  font-size: 1.8rem;
+  margin-bottom: 5rem; }
 
 .reviews .author:last-child {
   margin-bottom: 0; }
 
 @media (max-width: 1000px) {
   .reviews .quote {
-    font-size: 20px; }
+    font-size: 2rem; }
   .reviews .author {
-    font-size: 16px; } }
+    font-size: 1.6rem; } }
 
 /*---------------------
  	Contact Section
 ---------------------*/
 .contact {
-  background-color: #f7f7f7; }
+  background-color: #D1D1D1; }
 
 .contact form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 80rem;
   width: 80%; }
 
 .contact form input {
-  padding: 15px;
+  padding: 1.5rem;
   flex: 1;
-  margin-right: 30px;
-  font-size: 18px;
-  color: #555; }
+  margin-right: 3rem;
+  font-size: 1.8rem;
+  color: #5CDB95; }
 
 .contact form .btn {
-  padding: 18px 42px; }
+  padding: 1.8rem 4.2rem; }
 
 @media (max-width: 800px) {
   .contact form input {
     flex-basis: 100%;
-    margin: 0 0 20px 0; } }
+    margin: 0 0 2rem 0; } }
 
 /*-------------
  	Footer
@@ -560,17 +556,17 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #fff;
-  background-color: #414a4f;
-  padding: 60px 0; }
+  color: #EDF5E1;
+  background-color: #05386B;
+  padding: 6rem 0; }
 
 footer ul {
   display: flex;
-  margin-bottom: 25px;
-  font-size: 32px; }
+  margin-bottom: 2.5rem;
+  font-size: 3.2rem; }
 
 footer ul li {
-  margin: 0 8px; }
+  margin: 0 .8rem; }
 
 footer ul li:first-child {
   margin-left: 0; }
@@ -580,16 +576,16 @@ footer ul li:last-child {
 
 footer p {
   text-transform: uppercase;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 10px; }
+  font-size: 1.4rem;
+  color: #EDF5E1;
+  margin-bottom: 1rem; }
 
 footer p a {
-  color: #fff; }
+  color: #EDF5E1; }
 
 @media (max-width: 700px) {
   footer {
-    padding: 80px 15px; } }
+    padding: 8rem 1.5rem; } }
 
 /* -- Demo ads -- */
 @media (max-width: 1200px) {

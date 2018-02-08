@@ -23,7 +23,7 @@ export default class LandingPage extends Component {
                     <div className="background-image" style={{ backgroundImage: `url(../images/hero.jpeg)` }}></div>
                     <h1>Motivational VR</h1>
                     <h3>Your motivation is right here</h3>
-                    <Link to={`/motivationalWall`} className="btn">Check out our Users</Link>
+                    <Link to={`/motivationalWall`} className="btn">Experience Virtual Reality</Link>
                 </section>
 
                 <section id="stories" className="our-work">
@@ -43,24 +43,25 @@ export default class LandingPage extends Component {
 
                 <section id="services" className="features">
                     <h3 className="title">Features and services</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+                    <p>With Motivational VR experience first hand what others have done. Get advice from people just like you.</p>
+                    <p>Motivate yourself today!</p>
                     <hr />
 
                     <ul className="grid">
                         <li>
                             <i className="fa fa-camera-retro"></i>
-                            <h4>Photography</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+                            <h4>Virtual Reality</h4>
+                            <p>Experience virtual reality, 360 images and video through your phone or desktop. No extra hardware needed.</p>
                         </li>
                         <li>
                             <i className="fa fa-cubes"></i>
-                            <h4>Web Development</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+                            <h4>Motivation</h4>
+                            <p>Get advice and practical know-how from people who have learned how to take the first steps to achieve their dreams.</p>
                         </li>
                         <li>
                             <i className="fa fa-newspaper-o"></i>
-                            <h4>Content Editing</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+                            <h4>Networking</h4>
+                            <p>Upon experiencing our users reality, feel free to reach out to them for more guidance and possibly mentorship.</p>
                         </li>
                     </ul>
                 </section>
@@ -80,7 +81,7 @@ export default class LandingPage extends Component {
 
                 <section id="join" className="contact">
                     <h3 className="title">Join our newsletter</h3>	
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+                    <p>As we scale our application stay in the loop for any news, events, or products we release in the future.</p>
                     <hr />
 
                     <form>
