@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import NavMobile from '../components/NavMobile'
 // import characters from './characters.json';
 
-export default class Home extends Component {
+export default class MotivationalWall extends Component {
 	// should be an array once we load from API
 	state = {
 		characters: [],
