@@ -7,7 +7,7 @@ export default class NavMobile extends Component {
 
     render() {
         return (
-            <header>
+            <div className="header">
                 <div className="navMobile-wrapper">
                     <div className="navMobile-wrapper__nav">
                         <Link to={`/`} className="navMobile-wrapper__link">
@@ -15,7 +15,7 @@ export default class NavMobile extends Component {
                         </Link>
                     </div>
                 </div>
-            </header>
+            </div>
         );
     }
 }
