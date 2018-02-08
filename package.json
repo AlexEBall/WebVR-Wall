@@ -19,7 +19,7 @@
     "server": "node server.js",
     "client": "node scripts/start-client.js",
     "start": "node server.js",
-    "dev": "concurrently \"nodemon server.js\" \"npm run client\"",  // added critical for heroku pushing 'dev'
+    "dev": "concurrently \"nodemon server.js\" \"npm run client\"", 
     "build": "node scripts/build.js",
     "seed": "node scripts/seedDB.json",
     "test": "echo \"Error: no test specified\" && exit 1"

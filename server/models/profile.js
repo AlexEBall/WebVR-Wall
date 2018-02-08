@@ -17,13 +17,19 @@ const ProfileSchema = new Schema({
     country: {
         type: String
     },
-    backgroundImage: {
-        type: String
-    },
     profileImage: {
         type: String
     },
+    backgroundImage: {
+        type: String
+    },
     VR360Image: {
+        type: String
+    },
+    VR360Materials: {
+        type: String
+    },
+    VR360Obj: {
         type: String
     },
     category: {

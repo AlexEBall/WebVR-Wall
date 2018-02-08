@@ -20,5 +20,5 @@
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject"
     },
-    "proxy":"http://localhost:3001"  // added binds client and server host 
+    "proxy":"http://localhost:3001"  
 }
