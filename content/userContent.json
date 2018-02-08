@@ -50,6 +50,23 @@
     "VR360Materials": "./images/360Worlds/materials3.mtl",
     "VR360Obj": "./images/360Worlds/model3.obj",
     "category": "World Traveler"  
+},
+{
+    "userID": 4,
+    "fullName": "Mariam",
+    "briefStory": "Hey there, I am Mariam! My career and life path started in music, moving into business development, and now high speed into technology as a programmer! Life is about change, learning and facing fear! Completing an MBA, and full stack developer certification, I can attest you can achieve high goals if you stay driven and believe in your capabilities. You can motivate yourself but, you also need connection! Even if you came from life without father and or an absent mother, dreams can still come true!",
+    "story": "Hi all, my name is Mariam, I live in Los Angeles, from Floral Park, New York and I was born in Frankfurt Au Main, Germany. I began in playing clarinet, upright bass, flute, guitar, and vocal in my high school music department applying to Berklee College of Music, in Boston and got accepted as a guitar and music business management major. The last two years at Berklee, I recorded with a band and released music with Epic Records being able to perform for a Sony A&R executive who signed major artists. We finally got a record deal but it didn't work out. After these events, life changed, because I had put all hopes and dreams into music and although there were prominent people interested nothing was working right. After Bosto, I moved to New York City, and dived into my career, working at EMI Music, then in Times Square at MTV Networks. After a long term relationship ended, I moved to Los Angeles and my life changed again! Working in music publishing, I managed accounts like Amazon, Best Buy, and got into business development generating over $450k in my first about 6 months with new accounts like Nintendo World Store, Brookstone, and Toys R Us. Business was now a passion and in 2015, I got my MBA with a 4.0 GPA! It was hard work with a full time career but, it gave me even greater drive because I truly saw the power of learning. Now, I work in academic publishing and will graduate the UCLA full stack developer program with a certificate in MERN plus other technologies! I founded a company BEAR(f), became a Technical Co-Founder, and over the past 5 years have generated consistently over $1.5M in my work role. All of these points are to say, life is about work but, it must be also include Love. I write Love with a capital letter, because it encompasses love for all things, including loving others, and our Heavenly Creator, God! Growing up with out a father and an absent mother was a hardship that no child should have to endure because it affects every level of development as an individual from trusting others to doubting oneself but, there is so much more to life than this!!",
+    "country": "United States",
+    "profileImage": "./images/profileImage4.jpg",
+    "backgroundimage": "./images/backgroundimage4.jpg",
+    "VR360Image": false,
+    "VR360Materials": "./images/360Worlds/materials3.mtl",
+    "VR360Obj": "./images/360Worlds/model3.obj",
+    "category": "Drive"  
 }
 ]
+
+
+
+
 

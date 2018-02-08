@@ -6,6 +6,7 @@ const profileController = require("../../controllers/profileController");
 router.get("/", profileController.findAll);
 // matches with "/api/:id"
 router.get("/:id", profileController.findById);
+// matches with "/api/create
 router.post("/create", profileController.create);
 
 module.exports = router;

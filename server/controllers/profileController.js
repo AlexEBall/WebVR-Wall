@@ -4,7 +4,7 @@ module.exports = {
 
     findAll: function(req, res) {
         console.log("Req: ", req.query);
-        db.Test
+        db.Profile 
             .find({})
             .sort({ date: -1 })
             .then(dbModel => res.json(dbModel))
@@ -12,14 +12,14 @@ module.exports = {
 
     },
     findById: function(req, res) {
-        db.Test
+        db.Profile
             .findById(req.params.id)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     },
 
     create: function (req, res) {
-        db.Test
+        db.Profile
             .create(req.body)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
