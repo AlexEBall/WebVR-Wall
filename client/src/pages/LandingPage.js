@@ -23,7 +23,6 @@ export default class LandingPage extends Component {
                     <div className="background-image" style={{ backgroundImage: `url(../images/hero.jpeg)` }}></div>
                     <h1>Motivational VR</h1>
                     <h3>Your motivation is right here</h3>
-                    <a href="http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/" className="btn">Download it Here</a>
                 </section>
 
                 <section className="our-work">

@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import 'aframe';
-// import { Entity, Scene } from 'aframe-react';
 import { Link } from 'react-router-dom';
 import API from '../utils/API';
-import character from './character.json';
 import $ from 'jquery';
 
 export default class VRPanoramic extends Component {
     state = {
-        character: character
+        character: []
     }
 
     // When this component mounts, grab the profile with _id or id of this.props.match.params.id or _id
@@ -29,10 +27,11 @@ export default class VRPanoramic extends Component {
         // const { name } = this.props
 
         return ( 
-       <a-scene>
-        <a-sky src="france.jpg" rotation="0 -130 0"></a-sky>
-        <a-text font="kelsonsans" value="Leo Marose " width="6" position="-2.5 0.25 -1.5"
-                rotation="0 15 0"></a-text>
+        <a-scene>
+            <a-sky src="../images/france.jpg" rotation="0 -130 0"></a-sky>
+            <a-text font="kelsonsans" value="Leo Marose " width="6" position="-2.5 0.25 -1.5"
+                    rotation="0 15 0">
+            </a-text>
         </a-scene>
         )
     }
