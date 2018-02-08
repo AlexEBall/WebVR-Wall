@@ -1,4 +1,4 @@
-header {
+.header {
     width: 100%;
     max-width: 100%;
     position: fixed;
@@ -6,8 +6,8 @@ header {
 }
 
 .logo {
-    height: 8rem;
-    width: 11rem; 
+    height: 6rem;
+    width: 8rem; 
     margin-left: 2rem;
 }
 
@@ -43,8 +43,8 @@ header {
 
 @media only screen and (max-device-width: 425px) {
     .logo {
-        height: 4rem;
-        width: 5rem;
+        height: 3rem;
+        width: 4rem;
         margin-left: 1rem;
     }
 

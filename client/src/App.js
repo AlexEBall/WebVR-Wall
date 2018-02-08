@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
 import Home from './pages/Home';
 import VRWorld from './pages/VRWorld';
 import VRTry from './pages/VRTry';
@@ -13,7 +14,8 @@ export default class App extends Component {
       <Router>
         <div className="topLevel">
           <Switch>
-            <Route onUpdate={() => window.scrollTo(0, 0)} exact path="/" component={Home} />
+            <Route exact path="/" component={LandingPage} />
+            <Route onUpdate={() => window.scrollTo(0, 0)} exact path="/motivationalWall" component={Home} />
             <Route exact path="/VR-World/:id" component={VRTry} />
           </Switch>
         </div>
