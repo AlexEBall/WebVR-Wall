@@ -1,33 +1,35 @@
 import React, { Component } from 'react';
-// import API from '../../utils/API';
+import API from '../utils/API';
 import { Link } from 'react-router-dom';
 import Nav from '../components/Nav';
 import NavMobile from '../components/NavMobile'
-import characters from './characters.json';
+// import characters from './characters.json';
 
 export default class Home extends Component {
 	// should be an array once we load from API
 	state = {
-		characters: characters,
+		characters: [],
 	}
 
-	// componentDidMount = () => {
-	// 	this.loadProfiles();
-	// }
+	componentDidMount = () => {
+		this.loadProfiles();
+	}
 
-	// loadProfiles = () => {
-	// 	API.getProfiles()
-	// 		.then(res =>
-	// 			this.setState({ characters: res.data })
-	// 		).catch(err => console.log(err));
-	// }
+	loadProfiles = () => {
+		API.getProfiles()
+			.then(res =>
+				this.setState({ characters: res.data })
+			).catch(err => console.log(err));
+
+		console.log(this.state.characters);
+	}
 
 	render() {
 		return (
 			<div>
 				<NavMobile />
 				<div className="list">
-					{characters.map(item => 
+					{this.state.characters.map(item => 
 					<div 
 						className={`list-row list-row-${item.id}`} 
 						key={item.id}
