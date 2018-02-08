@@ -32,7 +32,7 @@ export default class MotivationalWall extends Component {
 					<div 
 						className={`list-row list-row-${item.userID}`} 
 						key={item._id}
-						style={{ backgroundImage: `url(${item.image})` }}>
+						style={{ backgroundImage: `url(${item.profileImage})` }}>
 						<div className="list-row list-row__text-wrapper">
 							<div className="list-row__letter" style={{backgroundImage: `url(${item.backgroundImg})`}}>{(item.fullName)}</div>
 						</div>
