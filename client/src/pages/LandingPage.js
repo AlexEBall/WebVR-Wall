@@ -12,10 +12,10 @@ export default class LandingPage extends Component {
                         </Link>
                     </h2>
                     <nav>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#stories">Our Stories</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#join">Join</a></li>
                     </nav>
                 </header>
 
@@ -23,9 +23,10 @@ export default class LandingPage extends Component {
                     <div className="background-image" style={{ backgroundImage: `url(../images/hero.jpeg)` }}></div>
                     <h1>Motivational VR</h1>
                     <h3>Your motivation is right here</h3>
+                    <Link to={`/motivationalWall`} className="btn">Check out our Users</Link>
                 </section>
 
-                <section className="our-work">
+                <section id="stories" className="our-work">
                     <h3 className="title">Our Stories</h3>
                     <p>Our website is focused around people who started out just like you!</p> 
                     <p>Want to live a better life but don't know what steps to take?</p>
@@ -40,7 +41,7 @@ export default class LandingPage extends Component {
                     </ul>
                 </section>
 
-                <section className="features">
+                <section id="services" className="features">
                     <h3 className="title">Features and services</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
                     <hr />
@@ -64,7 +65,7 @@ export default class LandingPage extends Component {
                     </ul>
                 </section>
 
-                <section className="reviews">
+                <section id="reviews" className="reviews">
                     <h3 className="title">What others say:</h3>
 
                     <p className="quote">Mauris sit amet mauris a arcu eleifend ultricies eget ut dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -77,7 +78,7 @@ export default class LandingPage extends Component {
                     <p className="author">— Kevin Blake</p>
                 </section>
 
-                <section className="contact">
+                <section id="join" className="contact">
                     <h3 className="title">Join our newsletter</h3>	
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
                     <hr />
@@ -96,8 +97,7 @@ export default class LandingPage extends Component {
                         <li><a href="#"><i className="fa fa-pinterest-square"></i></a></li>
                         <li><a href="#"><i className="fa fa-github-square"></i></a></li>
                     </ul>
-                    <p>Made by <a href="http://tutorialzine.com/" target="_blank">tutorialzine</a>. images courtesy to <a href="http://unsplash.com/" target="_blank">unsplash</a>.</p>
-                    <p>No attribution required. you can remove this footer.</p>
+                    <p>Made by </p>
                 </footer>
             </div>
         );
