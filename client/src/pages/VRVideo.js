@@ -58,7 +58,7 @@ export default class VRVideo extends React.Component {
                     scale="-1 1 1" />
          
           <a-text
-                value={`${this.state.character}'s Gallery`}
+                value={`${this.state.character.story}`}
                 position="0.05 0.80 -2"
                 rotation="0 180 0"
                 font="mozillavr"

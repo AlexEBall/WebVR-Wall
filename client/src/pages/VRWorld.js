@@ -35,7 +35,7 @@ export default class VRWorld extends Component {
                 <Entity primitive='a-torus' color="blue" position="0 1.25 -5" radius="3" radius-tubular="0.2" />
                 <Entity primitive='a-torus' color="red" position="0 1.25 -5" radius="5" radius-tubular="0.2" />
 
-                <Entity primitive='a-text' value={`Hello ${this.state.character.name}!`} position = "-0.8 1.7 -2.9" color = "black" width = "7" />
+                <Entity primitive='a-text' value={`Hello ${this.state.character.fullName}!`} position = "-0.8 1.7 -2.9" color = "black" width = "7" />
 
                 <Entity primitive='a-box' position ="0.01 1.7 -3" rotation="0 0 0" width="2" height="0.5" depth="0.1" color="khaki" />
 

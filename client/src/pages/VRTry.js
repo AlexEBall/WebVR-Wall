@@ -37,7 +37,7 @@ export default class VRTry extends Component {
             <a-entity obj-model="obj: #gallery-obj; mtl: #gallery-mtl"></a-entity>
             <a-entity id="camera" camera position="0 0.5 -3.0" rotation="0 180 0" wasd-controls look-controls></a-entity>
             <a-text
-                value={`${this.state.character.name}'s Gallery`}
+                value={`${this.state.character.fullName}'s Gallery`}
                 position="0.05 0.80 -2"
                 rotation="0 180 0"
                 font="mozillavr"

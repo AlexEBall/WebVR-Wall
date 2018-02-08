@@ -34,10 +34,10 @@ export default class LandingPage extends Component {
                     <hr />
 
                     <ul className="grid">
-                        <li className="small" style={{ backgroundImage: `url(../images/profileImage3.jpeg)` }}></li>
-                        <li className="large" style={{ backgroundImage: `url(../images/profileImage2.jpeg)` }}></li>
-                        <li className="large" style={{ backgroundImage: `url(../images/profileImage1.jpeg)` }}></li>
-                        <li className="small" style={{ backgroundImage: `url(../images/profileImage0.jpeg)` }}></li>
+                        <li className="small" style={{ backgroundImage: `url(../images/profileImage3.jpg)` }}></li>
+                        <li className="large" style={{ backgroundImage: `url(../images/profileImage2.jpg)` }}></li>
+                        <li className="large" style={{ backgroundImage: `url(../images/profileImage1.jpg)` }}></li>
+                        <li className="small" style={{ backgroundImage: `url(../images/profileImage0.jpg)` }}></li>
                     </ul>
                 </section>
 
