@@ -30,11 +30,11 @@ export default class MotivationalWall extends Component {
 				<div className="list">
 					{this.state.characters.map(item => 
 					<div 
-						className={`list-row list-row-${item.id}`} 
-						key={item.id}
+						className={`list-row list-row-${item.userID}`} 
+						key={item._id}
 						style={{ backgroundImage: `url(${item.image})` }}>
 						<div className="list-row list-row__text-wrapper">
-							<div className="list-row__letter" style={{backgroundImage: `url(${item.backgroundImg})`}}>{(item.name)}</div>
+							<div className="list-row__letter" style={{backgroundImage: `url(${item.backgroundImg})`}}>{(item.fullName)}</div>
 						</div>
 						<Link to={`/VR-World/${item._id}`} className="button button__VR">
 							<img className="link-img" src="../images/VR_5-512.png" alt="VR Headset" />
