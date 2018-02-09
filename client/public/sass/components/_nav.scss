@@ -1,27 +1,80 @@
-header {
+.header {
     width: 100%;
     max-width: 100%;
     position: fixed;
     z-index: 999;
-    background: rgba(213, 184, 230, 0.555);
 }
 
-.nav-wrapper {
+.logo {
+    height: 6rem;
+    width: 8rem; 
+    margin-left: 1rem;
+}
+
+.navMobile-wrapper {
     margin: 0 auto;
-    width: 90%;
 
     &__nav {
         display: flex;
-        justify-content: space-around;
-        border-radius: .5rem;
     }
 
     &__link {
-        display: inline-block;
-        padding: 1rem 1.5rem;
-        text-decoration: none;
-        color: black;
-        font-size: 3rem;
+        padding: .5rem;
+        font-size: 2rem;
+        transition: all 350ms ease-out;
+
+        &:hover,
+        &:focus {
+            background: {
+                image: linear-gradient(to top, $secondary-color, $secondary-color 7%, lighten($secondary-color, 5%) 7%, lighten($secondary-color, 5%));
+                position: 0 0;
+                size: 100% 100%;
+            }
+            border-radius: .7rem;
+            margin: 1.5rem;
+            padding: 0.25rem 2rem;
+        }
+        &:active {
+            background-image: linear-gradient(to bottom, darken($secondary-color, 7%), darken($secondary-color, 7%) 7%, $secondary-color 7%, $secondary-color);
+            border-radius: .7rem;
+        }
     }
+}
+
+@media only screen and (max-device-width: 425px) {
+    .logo {
+        height: 3rem;
+        width: 4rem;
+        margin-left: 1rem;
+    }
+
+    .navMobile-wrapper {
+        margin: 0 auto;
+
+        &__nav {
+            display: flex;
+        }
+        &__link {
+            padding: .5rem;
+            font-size: 2rem;
+            transition: all 350ms ease-out;
+
+            &:hover, &:focus {
+                background: {
+                    image: linear-gradient(to top, $secondary-color, $secondary-color 7%, lighten($secondary-color, 5%) 7%, lighten($secondary-color, 5%));
+                    position: 0 0;
+                    size: 100% 100%;
+                }
+                border-radius: .7rem;
+                margin: 1.5rem;
+                padding: 0.25rem 2rem;
+            }
+
+            &:active {
+                background-image : linear-gradient(to bottom, darken($secondary-color, 7%), darken($secondary-color, 7%) 7%, $secondary-color 7%, $secondary-color);
+                border-radius: .7rem;
+            }
+        }
+    }   
 }
 

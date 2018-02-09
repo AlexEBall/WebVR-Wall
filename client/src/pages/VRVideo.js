@@ -1,32 +1,28 @@
 import React, {Component} from 'react';
 import AFRAME from 'aframe';
-// import {Entity, Scene} from 'aframe-react';
 import {Link} from 'react-router-dom';
 import API from '../utils/API';
-import character from './character.json';
-import model from './model.obj';
-import material from './materials.mtl';
-import { $ } from 'jquery';
+import $ from 'jquery';
+
 /*import arrow_key_rotation from './vrvideo-helper';
 import play_on_window_click from './vrvideo-helper';*/
 
 export default class VRVideo extends React.Component {
     state = {
-        character: character
+        character: []
     }
 
     // When this component mounts, grab the profile with _id or id of this.props.match.params.id or _id
     // e.g. localhost:3000/api/profile/1
 
-/*    componentDidMount = () => {
+    componentDidMount = () => {
         API.getProfile(this.props.match.params.id)
             .then(res => this.setState({ character: res.data }))
             .catch(err => console.log(err));
     } 
-*/
+
     componentWillUnmount() {
         $('html').removeClass('a-html');
-        // document.html.classList.remove('a-html');
         document.body.classList.remove('a-body');
     }
 
@@ -50,7 +46,10 @@ export default class VRVideo extends React.Component {
           <a-assets>
             <video id="vid" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/"
             crossOrigin="anonymous"
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff9a568a0c02e15cb219cf07dab678f17896fef2
             autoPlay="false"
             loop="true"
             styles={{display: 'none'}}></video>
@@ -61,6 +60,7 @@ export default class VRVideo extends React.Component {
                               segmentsWidth: 64;
                               segmentsHeight: 64;"
                     material="shader: flat; src: #vid;"
+<<<<<<< HEAD
                     scale="-1 1 1">
           <a-entity camera look-controls="reverseMouseDrag: true"></a-entity>
           </a-entity>
@@ -71,6 +71,14 @@ export default class VRVideo extends React.Component {
                 early on in life that working hard works!`}
                 position="0.05 0.80"
                 rotation="0 360 0"
+=======
+                    scale="-1 1 1" />
+         
+          <a-text
+                value={`${this.state.character.story}`}
+                position="0.05 0.80 -2"
+                rotation="0 180 0"
+>>>>>>> ff9a568a0c02e15cb219cf07dab678f17896fef2
                 font="mozillavr"
                 color="#fff"
                 side="double"
@@ -87,12 +95,15 @@ export default class VRVideo extends React.Component {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   
 
 =======
 >>>>>>> 76b4c3f741821670434810e5b16dc278ed5a7c3c
 
+=======
+>>>>>>> ff9a568a0c02e15cb219cf07dab678f17896fef2
 
 
 

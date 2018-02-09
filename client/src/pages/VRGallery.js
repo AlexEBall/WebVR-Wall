@@ -1,30 +1,27 @@
 import React, {Component} from 'react';
 import 'aframe';
-// import {Entity, Scene} from 'aframe-react';
 import {Link} from 'react-router-dom';
 import API from '../utils/API';
-import character from './character.json';
-import model from './model.obj';
-import material from './materials.mtl';
-import {$,jQuery} from 'jquery';
+import model from '../3DModels/model.obj';
+import material from '../3DModels/materials.mtl';
+import $ from 'jquery';
 
-export default class VRTry extends Component {
+export default class VRGallery extends Component {
     state = {
-        character: character
+        character: []
     }
 
     // When this component mounts, grab the profile with _id or id of this.props.match.params.id or _id
     // e.g. localhost:3000/api/profile/1
 
-/*    componentDidMount = () => {
+    componentDidMount = () => {
         API.getProfile(this.props.match.params.id)
             .then(res => this.setState({ character: res.data }))
             .catch(err => console.log(err));
-    } */
+    } 
 
     componentWillUnmount() {
         $('html').removeClass('a-html');
-        // document.html.classList.remove('a-html');
         document.body.classList.remove('a-body');
     }
 
@@ -40,7 +37,7 @@ export default class VRTry extends Component {
             <a-entity obj-model="obj: #gallery-obj; mtl: #gallery-mtl"></a-entity>
             <a-entity id="camera" camera position="0 0.5 -3.0" rotation="0 180 0" wasd-controls look-controls></a-entity>
             <a-text
-                value={`${this.state.character.name}'s Gallery`}
+                value={`${this.state.character.fullName}'s Gallery`}
                 position="0.05 0.80 -2"
                 rotation="0 180 0"
                 font="mozillavr"

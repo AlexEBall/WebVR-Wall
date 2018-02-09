@@ -3,12 +3,11 @@ import 'aframe';
 import { Entity, Scene } from 'aframe-react';
 import { Link } from 'react-router-dom';
 import API from '../utils/API';
-import character from './character.json';
-import {$,jQuery} from 'jquery';
+import $ from 'jquery';
 
 export default class VRWorld extends Component {
     state = {
-        character: character
+        character: []
     }
 
     // When this component mounts, grab the profile with _id or id of this.props.match.params.id or _id
@@ -20,9 +19,9 @@ export default class VRWorld extends Component {
             .catch(err => console.log(err));
     } 
     
-    componentWillUnmount() {    // Removes aframe classes when leaving this route
+    // Removes aframe classes when leaving this route
+    componentWillUnmount() {    
         $('html').removeClass('a-html');
-        // document.html.classList.remove('a-html');
         document.body.classList.remove('a-body');
     }
 
@@ -36,7 +35,7 @@ export default class VRWorld extends Component {
                 <Entity primitive='a-torus' color="blue" position="0 1.25 -5" radius="3" radius-tubular="0.2" />
                 <Entity primitive='a-torus' color="red" position="0 1.25 -5" radius="5" radius-tubular="0.2" />
 
-                <Entity primitive='a-text' value={`Hello ${this.state.character.name}!`} position = "-0.8 1.7 -2.9" color = "black" width = "7" />
+                <Entity primitive='a-text' value={`Hello ${this.state.character.fullName}!`} position = "-0.8 1.7 -2.9" color = "black" width = "7" />
 
                 <Entity primitive='a-box' position ="0.01 1.7 -3" rotation="0 0 0" width="2" height="0.5" depth="0.1" color="khaki" />
 
