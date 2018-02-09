@@ -29,19 +29,6 @@ export default class VRPanoramic extends Component {
         // const { name } = this.props
 
         return ( 
-<<<<<<< HEAD
-
-            <a-scene>
-
-              <a-assets>
-                <img id="sky" src="./client/public/images/france.jpg"></img>
-              </a-assets>
-            <a-sky src="#sky" rotation="0 -130 0"> </a-sky>
-            <a-text font="kelsonsans" value="My name is MJ! I was born in Germany, and grew
-            up in New York ! Now I am in Los Angeles!" width="6" position="-2.5 0.25 -1.5"
-              rotation="0 15 0"></a-text>
-            </a-scene>
-=======
         <a-scene>
             <a-assets>
                 <a-asset-item id="rooster-obj" src={roosterobj}></a-asset-item>
@@ -60,7 +47,6 @@ export default class VRPanoramic extends Component {
                     color="#220007" width="12" align="center" position="-1.788 4.539 -13.854" rotation="0 0 0" >
             </a-text>
         </a-scene>
->>>>>>> ff9a568a0c02e15cb219cf07dab678f17896fef2
         )
     }
 }

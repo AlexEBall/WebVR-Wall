@@ -4,9 +4,6 @@ import {Link} from 'react-router-dom';
 import API from '../utils/API';
 import $ from 'jquery';
 
-/*import arrow_key_rotation from './vrvideo-helper';
-import play_on_window_click from './vrvideo-helper';*/
-
 export default class VRVideo extends React.Component {
     state = {
         character: []
@@ -46,10 +43,6 @@ export default class VRVideo extends React.Component {
           <a-assets>
             <video id="vid" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/"
             crossOrigin="anonymous"
-<<<<<<< HEAD
-
-=======
->>>>>>> ff9a568a0c02e15cb219cf07dab678f17896fef2
             autoPlay="false"
             loop="true"
             styles={{display: 'none'}}></video>
@@ -60,25 +53,19 @@ export default class VRVideo extends React.Component {
                               segmentsWidth: 64;
                               segmentsHeight: 64;"
                     material="shader: flat; src: #vid;"
-<<<<<<< HEAD
                     scale="-1 1 1">
           <a-entity camera look-controls="reverseMouseDrag: true"></a-entity>
           </a-entity>
               <a-text
-                value={`${this.state.character.name}'s Gallery. Abrief
-                bio on my life and how I got here! I am really 
-                fascinated by computers and coding! I realized
-                early on in life that working hard works!`}
+                value={`${this.state.character.name}`}
                 position="0.05 0.80"
                 rotation="0 360 0"
-=======
-                    scale="-1 1 1" />
+                scale="-1 1 1" />
          
           <a-text
                 value={`${this.state.character.story}`}
                 position="0.05 0.80 -2"
                 rotation="0 180 0"
->>>>>>> ff9a568a0c02e15cb219cf07dab678f17896fef2
                 font="mozillavr"
                 color="#fff"
                 side="double"
@@ -91,20 +78,3 @@ export default class VRVideo extends React.Component {
     )
   }
 }
-
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-  
-
-=======
->>>>>>> 76b4c3f741821670434810e5b16dc278ed5a7c3c
-
-=======
->>>>>>> ff9a568a0c02e15cb219cf07dab678f17896fef2
-
-
-
-

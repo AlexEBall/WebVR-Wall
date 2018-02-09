@@ -4,15 +4,19 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
 const mongoose = require("mongoose");
-// const routes = require("./server/routes/api/profile");  // added /api/profile might change
+const routes = require("./server/routes/api/profile");  // added /api/profile might change
 
 require("dotenv").config(); // added
 
-const cors = require('cors');
-const routes = require("./server/routes");
+// Enable CORS from client-side
+app.use(function(req, res, next) {  
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization, Access-Control-Allow-Credentials");
+  res.header("Access-Control-Allow-Credentials", "true");
+  next();
+});
 
-// app.use(logger('dev'));
-app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -42,8 +46,3 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, function() {
     console.log(`🌎  ==> API server listening on PORT ${PORT}!`);
 });
-
-
-
-
-
