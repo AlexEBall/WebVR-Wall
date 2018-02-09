@@ -8,6 +8,7 @@ import VRWater from './pages/VRWater';
 import VRVideo from './pages/VRVideo';
 import VRPanoramic from './pages/VRPanoramic';
 import VRBeach from './pages/VRBeach';
+import VRHome from './pages/VRHome';
 // import VRPanoramic from '.pages/VRPanoramic';
 // 
 
@@ -20,7 +21,7 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route onUpdate={() => window.scrollTo(0, 0)} exact path="/motivationalWall" component={MotivationalWall} />
-            <Route exact path="/VR-World/:id" component={VRBeach} />
+            <Route exact path="/VR-World/:id" component={VRHome} />
           </Switch>
         </div>
       </Router>

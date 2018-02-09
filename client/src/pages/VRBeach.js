@@ -38,16 +38,27 @@ export default class VRBeach extends Component {
                     <a-asset-item id="beach-obj" src={model}></a-asset-item>
                     <a-asset-item id="beach-mtl" src={material}></a-asset-item>
                 </a-assets>
-                <a-entity obj-model="obj: #beach-obj; mtl: #beach-mtl"></a-entity>
+                <a-entity obj-model="obj: #beach-obj; mtl: #beach-mtl" position="0 -0.136 0"></a-entity>
                 <a-entity
                     id="camera"
                     camera
-                    position="0 0.5 -3.0"
-                    rotation="0 180 0"
-                    wasd-controls
+                    position="0.099 -0.121 -0.1106436787501768"
+                    rotation="0.115 92.337 0"
+                    wasd-controls="acceleration: 1"
                     look-controls>
                 </a-entity>
+                <a-sky src="../images/ocean.jpg" rotation="0 -80 0"></a-sky>
+                <a-text 
+                    value={this.state.character.briefStory}
+                    position="-0.381 -0.21 -0.063"
+                    rotation="-17.24602963343778 88.4646835681991 -0.11459155902616465"
+                    color="#000"
+                    width="0.5"
+                    baseline="bottom"
+                    align="center">
+                </a-text>
             </a-scene>
         );
     }
 }
+{/* <a-entity id="camera" camera="active:false" position="0.099 -0.121 -0.1106436787501768" rotation="1.9484649444186273 104.59829681579978 0" wasd-controls="" look-controls="" data-aframe-inspector-original-camera=""></a-entity> */}
