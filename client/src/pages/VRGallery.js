@@ -6,7 +6,7 @@ import model from '../3DModels/model.obj';
 import material from '../3DModels/materials.mtl';
 import $ from 'jquery';
 
-export default class VRTry extends Component {
+export default class VRGallery extends Component {
     state = {
         character: []
     }

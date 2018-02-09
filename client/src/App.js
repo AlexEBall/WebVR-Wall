@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import MotivationalWall from './pages/MotivationalWall';
 import VRWorld from './pages/VRWorld';
-import VRTry from './pages/VRTry';
+import VRGallery from './pages/VRGallery';
 import VRWater from './pages/VRWater';
 import VRVideo from './pages/VRVideo';
+import VRPanoramic from './pages/VRPanoramic';
+import VRBeach from './pages/VRBeach';
 // import VRPanoramic from '.pages/VRPanoramic';
 // 
 
@@ -18,7 +20,7 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route onUpdate={() => window.scrollTo(0, 0)} exact path="/motivationalWall" component={MotivationalWall} />
-            <Route exact path="/VR-World/:id" component={VRVideo} />
+            <Route exact path="/VR-World/:id" component={VRBeach} />
           </Switch>
         </div>
       </Router>
