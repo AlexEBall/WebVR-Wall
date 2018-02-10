@@ -41,7 +41,7 @@ export default class VRBeach extends Component {
                 <a-entity
                     id="camera"
                     camera
-                    position="0.099 -0.121 -0.1106436787501768"
+                    position="0.093 -0.121 -0.054"
                     rotation="0.115 92.337 0"
                     wasd-controls="acceleration: 1"
                     look-controls>
@@ -50,7 +50,7 @@ export default class VRBeach extends Component {
                 <a-text 
                     value={this.state.character.briefStory}
                     position="-0.381 -0.21 -0.063"
-                    rotation="-17.24602963343778 88.4646835681991 -0.11459155902616465"
+                    rotation = "-8.136 88.52197934771219 -0.34377467707849396"
                     color="#000"
                     width="0.5"
                     baseline="bottom"
@@ -60,3 +60,4 @@ export default class VRBeach extends Component {
         );
     }
 }
+
