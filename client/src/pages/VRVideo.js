@@ -9,70 +9,52 @@ export default class VRVideo extends React.Component {
         character: []
     }
 
+    // When this component mounts, grab the profile with _id or id of
+    // this.props.match.params.id or _id e.g. localhost:3000/api/profile/1
+
     componentDidMount = () => {
         const url_id = (this.props.match.url)
         const id = url_id.split("VR-World/")[1];
-
+        
         API.getProfile(id)
-            .then(res => this.setState({ character: res.data }))
+            .then(res => this.setState({character: res.data}))
             .catch(err => console.log(err));
-    } 
+    }
 
     componentWillUnmount() {
         $('html').removeClass('a-html');
-        document.body.classList.remove('a-body');
+        document
+            .body
+            .classList
+            .remove('a-body');
     }
 
     render() {
-        //const { name } = this.props
-                                            
-    return (       
-       <a-scene>
-        <a-scene id="vr-scene">
-          <a-camera 
-            id="camera"
-            position="0 1.8 4"
-            cursor-visible="true"
-            cursor-scale="2" 
-            cursor-color="#000000" 
-            cursor-offset="2" 
-            cursor-maxdistance="100"
-            cursor-opacity="0.7"></a-camera>
-         
-          <a-assets>
-            <video id="vid" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/"
-            crossOrigin="anonymous"
-            autoPlay="false"
-            loop="true"
-            styles={{display: 'none'}}></video>
-          </a-assets>
-         
-          <a-entity geometry="primitive: sphere;
-                              radius: 5000;
-                              segmentsWidth: 64;
-                              segmentsHeight: 64;"
-                    material="shader: flat; src: #vid;"
-                    scale="-1 1 1" />
-         
-          <a-text
-                value={`${this.state.character.story}`}
-                position="0.05 0.80 -2"
-                rotation="0 180 0"
-                font="mozillavr"
-                color="#e43e31"
-                side="double"
-                align="center"
-                width="6">
-            </a-text>
-        </a-scene>
-        </a-scene>
-    )
-  }
+        const {name} = this.props
+
+        return (
+
+            <a-scene>
+                <a-assets>
+                    <video
+                        id="vrvideo"
+                        autoPlay
+                        loop="true"
+                        src="../images/vrvideo.mp4"
+                        webkit-playsinline/>
+                </a-assets>
+
+                <a-videosphere src="#vrvideo"></a-videosphere>
+                <a-text
+                    font="roboto"
+                    value={`${this.state.character.fullName}\n ${this.state.character.briefStory}`}
+                    color="#220007"
+                    width="12"
+                    align="center"
+                    position="-1.788 4.539 -13.854"
+                    rotation="0 0 0">
+                </a-text>
+            </a-scene>
+        )
+    }
 }
-
-
-
-
-
-
-
