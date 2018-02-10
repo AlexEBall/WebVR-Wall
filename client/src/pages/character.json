@@ -1,8 +1,0 @@
-{
-    "id": 4,
-    "name": "Epona",
-    "image": "./images/epona.png",
-    "clicked": false,
-    "backgroundImg": "./images/Dodongos_Cavern.png",
-    "type": ""
-}

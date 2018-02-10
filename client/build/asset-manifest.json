@@ -1,6 +1,12 @@
 {
-  "main.js": "static/js/main.9215382f.js",
-  "main.js.map": "static/js/main.9215382f.js.map",
+  "main.js": "static/js/main.6808d46e.js",
+  "main.js.map": "static/js/main.6808d46e.js.map",
+  "static/media/Rooster.mtl": "static/media/Rooster.5d29ea13.mtl",
+  "static/media/Rooster.obj": "static/media/Rooster.98ec4c2e.obj",
+  "static/media/earth_mtl.mtl": "static/media/earth_mtl.c2939fef.mtl",
+  "static/media/earth_obj.obj": "static/media/earth_obj.4d0057f0.obj",
+  "static/media/little-private-beach.mtl": "static/media/little-private-beach.3bd60a87.mtl",
+  "static/media/little-private-beach.obj": "static/media/little-private-beach.38602523.obj",
   "static/media/materials.mtl": "static/media/materials.3bd60a87.mtl",
   "static/media/model.obj": "static/media/model.7d035788.obj"
 }
