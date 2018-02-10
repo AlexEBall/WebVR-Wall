@@ -11,11 +11,11 @@ export default class VRPanoramic extends Component {
         character: []
     }
 
-    // When this component mounts, grab the profile with _id or id of this.props.match.params.id or _id
-    // e.g. localhost:3000/api/profile/1
-
     componentDidMount = () => {
-        API.getProfile(this.props.match.params.id)
+        const url_id = (this.props.match.url)
+        const id = url_id.split("VR-World/")[1];
+
+        API.getProfile(id)
             .then(res => this.setState({ character: res.data }))
             .catch(err => console.log(err));
     } 
@@ -26,8 +26,6 @@ export default class VRPanoramic extends Component {
     }
 
     render() {
-        // const { name } = this.props
-
         return ( 
         <a-scene>
             <a-assets>

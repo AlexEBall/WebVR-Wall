@@ -11,14 +11,13 @@ export default class VRBeach extends Component {
         character: []
     }
 
-    // When this component mounts, grab the profile with _id or id of
-    // this.props.match.params.id or _id e.g. localhost:3000/api/profile/1
-
     componentDidMount = () => {
-        API
-            .getProfile(this.props.match.params.id)
-            .then(res => this.setState({character: res.data}))
-            .catch(err => console.log(err));
+       const url_id = (this.props.match.url)
+       const id = url_id.split("VR-World/")[1];
+
+        API.getProfile(id)
+        .then(res => this.setState({character: res.data}))
+        .catch(err => console.log(err));
     }
 
     componentWillUnmount() {
@@ -61,4 +60,3 @@ export default class VRBeach extends Component {
         );
     }
 }
-{/* <a-entity id="camera" camera="active:false" position="0.099 -0.121 -0.1106436787501768" rotation="1.9484649444186273 104.59829681579978 0" wasd-controls="" look-controls="" data-aframe-inspector-original-camera=""></a-entity> */}
