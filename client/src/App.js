@@ -21,7 +21,7 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route onUpdate={() => window.scrollTo(0, 0)} exact path="/motivationalWall" component={MotivationalWall} />
-            <Route exact path="/VR-World/:id" component={VRHome} />
+            <Route exact path="/VR-World/:id" component={VRPanoramic} />
           </Switch>
         </div>
       </Router>
