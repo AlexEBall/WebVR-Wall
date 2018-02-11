@@ -30,20 +30,29 @@ export default class VRHelicopter extends Component {
 
     render() {
         // const { name } = this.props
-        
         return (
 
-          <a-scene>
-            <a-assets>
-              <video id="jandewolfvr" autoPlay loop="true" src="../images/jandewolfvr.mp4" webkit-playsinline />
-            </a-assets>
-              <a-text font="roboto" value={`${this.state.character.fullName}\n ${this.state.character.briefStory}`} 
-          color="#220007" width="12" align="center" position="-1.788 4.539 -13.854" rotation="0 0 0" >
-              </a-text>
+            <a-scene>
+                <a-assets>
+                    <video
+                        id="jandewolfvr"
+                        autoPlay
+                        loop="true"
+                        src="../images/jandewolfvr.mp4"
+                        webkit-playsinline/>
+                </a-assets>
+                <a-text
+                    font="roboto"
+                    value={`${this.state.character.fullName}\n ${this.state.character.briefStory}`}
+                    color="#220007"
+                    width="12"
+                    align="center"
+                    position="-1.788 4.539 -13.854"
+                    rotation="0 0 0"></a-text>
 
-              <a-videosphere src="#jandewolfvr"></a-videosphere>
+                <a-videosphere src="#jandewolfvr"></a-videosphere>
 
-          </a-scene>
+            </a-scene>
         );
     }
 }

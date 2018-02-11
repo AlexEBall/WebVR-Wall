@@ -11,9 +11,6 @@ export default class VREarth extends Component {
         character: []
     }
 
-    // When this component mounts, grab the profile with _id or id of
-    // this.props.match.params.id or _id e.g. localhost:3000/api/profile/1
-
     componentDidMount = () => {
         const url_id = (this.props.match.url)
         const id = url_id.split("VR-World/")[1];
@@ -70,7 +67,6 @@ export default class VREarth extends Component {
             <a-text font="kelsonsans" value={`${this.state.character.fullName}\n ${this.state.character.briefStory}`} 
             color="#fff" width="12" align="center" position="-1.788 4.539 -13.854" rotation="0 0 0" >
             </a-text>
-                    
             </a-scene>
         );
     }

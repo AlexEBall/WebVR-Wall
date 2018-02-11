@@ -20,7 +20,7 @@ export default class MotivationalWall extends Component {
 				this.setState({ characters: res.data })
 			).catch(err => console.log(err));
 
-		console.log(this.state.characters);
+		// console.log(this.state.characters);
 	}
 
 	render() {

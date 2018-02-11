@@ -6,9 +6,9 @@ import VRWorld from './pages/VRWorld';
 import VRGallery from './pages/VRGallery';
 import VRVideo from './pages/VRVideo';
 import VRPanoramic from './pages/VRPanoramic';
-//import VRPanoramic2 from './pages/VRPanoramic2';
+import VRPanoramic2 from './pages/VRPanoramic2';
 import VRBeach from './pages/VRBeach';
-// import VRHome from './pages/VRHome';
+import VRHome from './pages/VRHome';
 import VRHelicopter from './pages/VRHelicopter';
 import VREarth from './pages/VREarth';
 
@@ -21,7 +21,6 @@ import VREarth from './pages/VREarth';
 // 4 gallery (give credit)
 // 5 Earth (give credit)
 // 6 VRVideo 
-
 
 export default class App extends Component { 
 
@@ -36,6 +35,7 @@ export default class App extends Component {
             <Route exact path="/VR-World/5a7bd4b214984f0014e74aef" component={VRHelicopter} />
             <Route exact path="/VR-World/5a7bd49f14984f0014e74aee" component={VRBeach} />
             <Route exact path="/VR-World/5a7bd36e14984f0014e74aec" component={VRPanoramic} />
+            <Route exact path="/VR-World/5a7bd36e14984f0014e74aec" component={VRPanoramic2} />
             <Route exact path="/VR-World/5a7bd35d14984f0014e74aeb" component={VRGallery} />
             <Route exact path="/VR-World/5a7bd34714984f0014e74aea" component={VREarth} />
             <Route exact path="/VR-World/5a7bd2c914984f0014e74ae9" component={VRVideo} />

@@ -3,37 +3,42 @@
 ------ ADD PICTURE---
 
 So, when you were young you dreamed about becoming a Rockstar, a Ballerina or a Pilot?
-Are you a Rockstar, a Ballerina or Pilot nowadays? Did you forget or lose YOUR dream when growing up? 
+Are you a Rockstar, a Ballerina or Pilot nowadays? 
 
 Why border, afterall a dream is just a dream, right?
 
-We disagree with that! We think that everybody has the capacity to follow his/her realistic dream or passion. 
+We strongly disagree with that! We think that everybody has the capacity to follow his/her realistic dream or passion. 
+In fact, we believe that your passion and dreams make out who you are. 
 
 Take a careful look around you - and you might findt that tons of people have actually realized their dreams in one or the other way. 
 
-The WebVR-Wall presents the beauty of life, through shared motivational stories from people with all backgrounds and accomplishments. You want to sail around the world but you don't think you can afford or even do it? Why don't you read the story and tips from a person who actually did sail around the wolrd? You can even dive into their VR world, to capture a better outstanding of who this individual is. 
+The WebVR-Wall presents the beauty of life, through shared motivational stories from people with all backgrounds and accomplishments. You want to sail around the world but you don't think you can afford or even do it? Why don't you read the story and tips from a person who actually did sail around the wolrd? You can even dive into their VR world, to capture a better outstanding of who this individual really is. 
+
+Start you passion or dream today, with the help of real people with real stories! 
 
 ## Instructions
 Open our application and start searching for the activies you always dreamed about doing! 
 Read through the story you found and get motivated, without waiting in line, without staying on hold, just now and wherever you are!
 
-Click on the VR icon on the right side corner of each story, to see what world the person shared with us. 
+Click on the VR icon on the right side corner of each story, to see what world your author shared with us. 
 
 ## Prerequisites
 Be interested in becoming a better you! Eventually, YOU are all about YOU! 
+While this may sound self centered, don't forget that a "happy you" makes people around you even happier! 
+So don't hold off, but kill two birds with one stone! 
 
 ### VR - Virtual reality
 
 In simple words, Virtutal reality is a new way of viewing content. 
-Close your eye and imagine you are at your most favorite place. 
-Look in front and in the back of you, what do see?
+Close your eyes and imagine you at your most favorite place. 
+Look in front, turn around and look at the back, what do see?
 
 Eventually, exactly this is VR. 
-But instead of you creating the picture from experience and memories, other people create it on the computer, for you to experience. 
-You can stand in the middle of a famous landscape and turn, as if you were there. 
-You can visit computer created worlds, and explore them. 
+But instead of you creating the picture from experience and memories, other people create it on the computer for you to experience. 
+You can stand in the middle of a famous landscape and turn around, as if you were there. 
+You can visit computer created worlds and explore them, whether real or not. 
 
-Check out the user generated worlds or 360 pictures, on each and every story! 
+Check out the user generated worlds or 360 pictures on each and every story shared, just click the icon on the right corner of each story. 
 
 ## Requirements
 **The requirements for Project #3 are as follows:**

@@ -11,9 +11,6 @@ export default class VRBeach extends Component {
         character: []
     }
 
-    // When this component mounts, grab the profile with _id or id of
-    // this.props.match.params.id or _id e.g. localhost:3000/api/profile/1
-
     componentDidMount = () => {
         const url_id = (this.props.match.url)
         const id = url_id.split("VR-World/")[1];
@@ -39,16 +36,27 @@ export default class VRBeach extends Component {
                     <a-asset-item id="beach-obj" src={model}></a-asset-item>
                     <a-asset-item id="beach-mtl" src={material}></a-asset-item>
                 </a-assets>
-                <a-entity obj-model="obj: #beach-obj; mtl: #beach-mtl"></a-entity>
+                <a-entity obj-model="obj: #beach-obj; mtl: #beach-mtl" position="0 -0.136 0"></a-entity>
                 <a-entity
                     id="camera"
                     camera
-                    position="0 0.5 -3.0"
-                    rotation="0 180 0"
-                    wasd-controls
+                    position="0.093 -0.121 -0.054"
+                    rotation="0.115 92.337 0"
+                    wasd-controls="acceleration: 1"
                     look-controls>
                 </a-entity>
+                <a-sky src="../images/ocean.jpg" rotation="0 -80 0"></a-sky>
+                <a-text 
+                    value={this.state.character.briefStory}
+                    position="-0.381 -0.21 -0.063"
+                    rotation = "-8.136 88.52197934771219 -0.34377467707849396"
+                    color="#000"
+                    width="0.5"
+                    baseline="bottom"
+                    align="center">
+                </a-text>
             </a-scene>
         );
     }
 }
+
