@@ -15,8 +15,9 @@ export default class VRBeach extends Component {
     // this.props.match.params.id or _id e.g. localhost:3000/api/profile/1
 
     componentDidMount = () => {
-        API
-            .getProfile(this.props.match.params.id)
+        const url_id = (this.props.match.url)
+        const id = url_id.split("VR-World/")[1];
+        API.getProfile(id)
             .then(res => this.setState({character: res.data}))
             .catch(err => console.log(err));
     }
