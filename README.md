@@ -31,7 +31,7 @@ While this may sound self centered, don't forget that a "happy you" makes people
 
 So don't hold off, but kill two birds with one stone! 
 
-### VR - Virtual reality
+## VR - Virtual reality
 
 In simple words, Virtutal reality is a new way of viewing content. 
 Close your eyes and imagine you at your most favorite place. 
@@ -43,6 +43,12 @@ You can stand in the middle of a famous landscape and turn around, as if you wer
 You can visit computer created worlds and explore them, whether real or not. 
 
 Check out the user generated worlds or 360 pictures on each and every story shared, just click the icon on the right corner of each story. 
+
+### 3D Models
+Giving credit to the artisits whose works we've used in our app
++ [Keen Chan - Small Gallery](https://poly.google.com/user/9ONx-uk_7ao)
++ [Carson Lam - Little Private Beach](https://poly.google.com/user/dl73GLp9dAj) 
++ [Jessica Novita - Medieval Asian Harbor](https://sketchfab.com/jessica.novita)
 
 ## Code Higlights
 
