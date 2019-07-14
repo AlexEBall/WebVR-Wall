@@ -8,7 +8,10 @@
         "aframe-react": "^4.3.0",
         "axios": "^0.18.1",
         "cors": "^2.8.4",
+        "eslint": "^6.0.1",
         "jquery": "^3.3.1",
+        "js-yaml": "^3.13.1",
+        "mem": "^5.1.1",
         "node-sass": "^4.7.2",
         "react": "^16.2.0",
         "react-dom": "^16.2.0",
@@ -21,5 +24,12 @@
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject"
+    },
+    "devDependencies": {
+        "cryptiles": "^4.1.3",
+        "hoek": "^6.1.3",
+        "parsejson": "^0.0.3",
+        "webpack-dev-server": "^3.7.2",
+        "ws": "^7.1.0"
     }
 }
